@@ -6,7 +6,7 @@
 
 :root {
   /* Obsidian, Sapphire, Titanium & Architectural Gold */
-  --bg-primary: #060911;
+  --bg-primary: #ffffff;
   --bg-secondary: #0B101E;
   --bg-tertiary: #121A2F;
   --bg-card: rgba(11, 16, 30, 0.85);
@@ -137,13 +137,9 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Navigation Shrink State */
 header.scrolled {
-  background: rgba(6, 9, 17, 0.96);
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
-  padding-top: 0.75rem;
-  padding-bottom: 0.75rem;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.7);
+  background: #ffffff;
+  border-bottom: 1px solid #e2e8f0;
+  box-shadow: 0 4px 20px rgba(15, 23, 42, 0.08);
 }
 
 /* Gold Gradient Accents */

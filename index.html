@@ -91,245 +91,921 @@
   }
   </script>
 </head>
-<body class="bg-brand-dark text-slate-100 antialiased selection:bg-amber-500 selection:text-black">
+<body class="bg-white text-slate-700 antialiased selection:bg-amber-500 selection:text-black">
 
   <!-- =========================================================================
        HEADER & NAVIGATION
        ========================================================================= -->
-  <header id="main-header" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 py-4 bg-brand-dark/95 backdrop-blur-md border-b border-slate-800/80">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between">
-      
-      <!-- Brand Logo & Tagline -->
-      <a href="#home" class="flex items-center gap-3 group">
-        <div class="w-11 h-11 rounded-xl bg-gradient-to-br from-amber-400 via-amber-500 to-yellow-600 flex items-center justify-center text-slate-950 font-black shadow-lg shadow-amber-500/20 border border-amber-300/40 group-hover:scale-105 transition-transform">
-          <i data-lucide="building-2" class="w-6 h-6 text-slate-950"></i>
+<header
+  id="main-header"
+  class="fixed top-0 left-0 right-0 z-50 bg-white border-b border-slate-200 shadow-sm transition-all duration-300"
+>
+  <div class="w-full px-4 sm:px-6 lg:px-8">
+
+    <div class="flex items-center justify-between h-20">
+
+      <!-- ================= BRAND ================= -->
+      <a
+        href="#home"
+        class="flex items-center gap-3 min-w-0 shrink"
+      >
+
+        <!-- Logo Icon -->
+        <div
+          class="w-11 h-11 sm:w-12 sm:h-12 lg:w-14 lg:h-14 shrink-0 rounded-xl
+                 bg-gradient-to-br from-amber-400 via-amber-500 to-yellow-600
+                 flex items-center justify-center
+                 shadow-lg shadow-amber-500/20"
+        >
+          <i
+            data-lucide="building-2"
+            class="w-6 h-6 lg:w-7 lg:h-7 text-slate-950"
+          ></i>
         </div>
-        <div class="flex flex-col">
-          <span class="text-xl sm:text-2xl font-black tracking-tight text-white flex items-center gap-1.5">
-            BuildIQ <span class="text-amber-400 font-bold text-xs tracking-widest uppercase bg-amber-950/70 px-2 py-0.5 rounded border border-amber-800/60">Projects</span>
+
+
+        <!-- Brand Text -->
+        <div class="flex flex-col justify-center leading-none min-w-0">
+
+          <div class="flex items-baseline whitespace-nowrap">
+
+            <span
+              class="text-xl sm:text-2xl lg:text-3xl font-black tracking-tight text-slate-900"
+            >
+              Build
+            </span>
+
+            <span
+              class="text-xl sm:text-2xl lg:text-3xl font-black tracking-tight text-red-600"
+            >
+              IQ
+            </span>
+
+            <span
+              class="ml-1 sm:ml-2 text-xl sm:text-2xl lg:text-3xl font-black tracking-tight text-slate-900"
+            >
+              PROJECTS
+            </span>
+
+          </div>
+
+
+          <!-- Desktop Tagline -->
+          <span
+            class="hidden lg:block mt-2 text-[10px] uppercase
+                   tracking-[0.14em] text-slate-500 font-mono whitespace-nowrap"
+          >
+            PROJECT MANAGEMENT CONSULTANCY &nbsp;|&nbsp;
+            ARCHITECTURE &nbsp;|&nbsp;
+            TURNKEY CONSTRUCTION
           </span>
-          <span class="text-[10px] uppercase tracking-wider text-slate-400 font-mono hidden sm:inline-block">
-            Project Management Consultancy | Architecture | Turnkey Construction
+
+
+          <!-- Mobile Tagline -->
+          <span
+            class="block lg:hidden mt-1 text-[8px] sm:text-[9px]
+                   uppercase tracking-wider text-slate-500 font-mono whitespace-nowrap"
+          >
+            PMC • Architecture • Turnkey
           </span>
+
         </div>
+
       </a>
 
-      <!-- Desktop Navigation Menu -->
-      <nav class="hidden lg:flex items-center gap-7 text-sm font-medium text-slate-300">
-        <a href="#home" class="nav-link hover:text-amber-400 transition-colors">Home</a>
-        <a href="#services" class="nav-link hover:text-amber-400 transition-colors">Services</a>
-        <a href="#featured-project" class="nav-link hover:text-amber-400 transition-colors text-amber-300 flex items-center gap-1.5">
-          <span class="w-2 h-2 rounded-full bg-amber-400 animate-pulse"></span> Featured Project
+
+      <!-- ================= DESKTOP NAV ================= -->
+      <nav
+        class="hidden xl:flex flex-1 items-center justify-center
+               gap-0.5 2xl:gap-1
+               text-sm font-medium text-slate-600
+               whitespace-nowrap ml-4"
+      >
+
+        <a
+          href="#home"
+          class="nav-link px-2 2xl:px-3 py-2 hover:text-amber-600 transition-colors"
+        >
+          Home
         </a>
-        <a href="#portfolio" class="nav-link hover:text-amber-400 transition-colors">Portfolio</a>
-        <a href="#about-founder" class="nav-link hover:text-amber-400 transition-colors">About Founder</a>
-        <a href="#contact" class="nav-link hover:text-amber-400 transition-colors">Contact Us</a>
+
+        <a
+          href="#services"
+          class="nav-link px-2 2xl:px-3 py-2 hover:text-amber-600 transition-colors"
+        >
+          Services
+        </a>
+
+        <a
+          href="#featured-project"
+          class="nav-link px-2 2xl:px-3 py-2 hover:text-amber-600 transition-colors"
+        >
+          Featured Project
+        </a>
+
+        <a
+          href="#portfolio"
+          class="nav-link px-2 2xl:px-3 py-2 hover:text-amber-600 transition-colors"
+        >
+          Portfolio
+        </a>
+
+        <a
+          href="#about-founder"
+          class="nav-link px-2 2xl:px-3 py-2 hover:text-amber-600 transition-colors"
+        >
+          About Founder
+        </a>
+
+        <a
+          href="#contact"
+          class="nav-link px-2 2xl:px-3 py-2 hover:text-amber-600 transition-colors"
+        >
+          Contact Us
+        </a>
+
       </nav>
 
-      <!-- Desktop Header CTA Button -->
-      <div class="hidden lg:flex items-center gap-4">
-        <a href="#contact" class="px-5 py-2.5 rounded-xl bg-gradient-to-r from-amber-500 to-yellow-500 hover:from-amber-400 hover:to-yellow-400 text-slate-950 text-sm font-bold shadow-lg shadow-amber-500/20 transition-all hover:shadow-amber-500/40 flex items-center gap-2 border border-amber-300/50 hover:scale-[1.02]">
-          <i data-lucide="calendar" class="w-4 h-4 text-slate-950"></i>
+
+      <!-- ================= DESKTOP CTA ================= -->
+      <div class="hidden xl:flex shrink-0 ml-3">
+
+        <a
+          href="#contact"
+          class="inline-flex items-center justify-center gap-2
+                 px-4 2xl:px-6 py-3 rounded-xl
+                 bg-gradient-to-r from-amber-500 to-yellow-500
+                 hover:from-amber-400 hover:to-yellow-400
+                 text-slate-950 text-sm font-bold
+                 whitespace-nowrap
+                 shadow-lg shadow-amber-500/20
+                 transition-all"
+        >
+
+          <i data-lucide="calendar" class="w-4 h-4"></i>
+
           <span>Book Consultation</span>
+
         </a>
+
       </div>
 
-      <!-- Mobile Hamburger Button -->
-      <button id="mobile-menu-btn" class="lg:hidden p-2.5 rounded-xl text-slate-300 hover:text-white hover:bg-slate-800 border border-slate-700/60 focus:outline-none" aria-label="Toggle navigation">
-        <i data-lucide="menu" class="w-6 h-6"></i>
+
+      <!-- ================= MOBILE / TABLET MENU BUTTON ================= -->
+      <button
+        id="mobile-menu-btn"
+        type="button"
+        class="xl:hidden ml-4 shrink-0 p-2.5 rounded-xl
+               text-slate-700 bg-slate-50 border border-slate-200
+               hover:bg-amber-50 hover:text-amber-600
+               transition-colors"
+        aria-label="Open navigation menu"
+      >
+
+        <i
+          data-lucide="menu"
+          class="w-6 h-6"
+        ></i>
+
       </button>
+
     </div>
-  </header>
+
+  </div>
+</header>
 
   <!-- Mobile Drawer Menu -->
-  <div id="mobile-menu-drawer" class="fixed inset-0 z-50 bg-brand-dark/98 backdrop-blur-2xl hidden flex flex-col p-6 overflow-y-auto">
-    <div class="flex items-center justify-between border-b border-slate-800 pb-4">
-      <div class="flex items-center gap-3">
-        <div class="w-9 h-9 rounded-lg bg-amber-500 flex items-center justify-center text-slate-950 font-bold">
-          <i data-lucide="building-2" class="w-5 h-5 text-slate-950"></i>
-        </div>
-        <div>
-          <span class="text-lg font-bold text-white">BuildIQ Projects</span>
-          <p class="text-[10px] text-slate-400">PMC • Architecture • Turnkey</p>
-        </div>
+<div
+  id="mobile-menu-drawer"
+  class="fixed inset-0 z-50 bg-white hidden flex-col overflow-y-auto"
+>
+
+  <!-- Mobile Header -->
+  <div class="flex items-center justify-between px-6 py-5 border-b border-slate-200">
+
+    <a href="#home" class="flex items-center gap-3">
+
+      <!-- Logo Icon -->
+      <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-amber-400 via-amber-500 to-yellow-600 flex items-center justify-center shadow-md shadow-amber-500/20">
+        <i
+          data-lucide="building-2"
+          class="w-5 h-5 text-slate-950"
+        ></i>
       </div>
-      <button id="close-mobile-menu" class="p-2 text-slate-400 hover:text-white rounded-lg hover:bg-slate-800">
-        <i data-lucide="x" class="w-6 h-6"></i>
-      </button>
-    </div>
 
-    <div class="flex flex-col gap-4 py-8 text-base font-semibold text-slate-200">
-      <a href="#home" class="py-2.5 px-3 rounded-lg hover:bg-slate-800 hover:text-amber-400">Home</a>
-      <a href="#services" class="py-2.5 px-3 rounded-lg hover:bg-slate-800 hover:text-amber-400">Services</a>
-      <a href="#featured-project" class="py-2.5 px-3 rounded-lg bg-amber-950/40 border border-amber-800/40 text-amber-300">Featured Project (Sikar, RJ)</a>
-      <a href="#portfolio" class="py-2.5 px-3 rounded-lg hover:bg-slate-800 hover:text-amber-400">Portfolio & Experience</a>
-      <a href="#about-founder" class="py-2.5 px-3 rounded-lg hover:bg-slate-800 hover:text-amber-400">About Founder</a>
-      <a href="#contact" class="py-2.5 px-3 rounded-lg hover:bg-slate-800 hover:text-amber-400">Contact Us</a>
-    </div>
+      <!-- Logo Text -->
+      <div class="flex flex-col leading-none">
 
-    <div class="mt-auto pt-6 border-t border-slate-800 space-y-3">
-      <a href="#contact" class="w-full py-3.5 rounded-xl bg-gradient-to-r from-amber-500 to-yellow-500 text-slate-950 text-center font-bold text-sm block shadow-lg shadow-amber-500/20">
-        Book Consultation
-      </a>
-      <a href="https://wa.me/919820012345?text=Hello%20BuildIQ%20Projects%2C%20I%20would%20like%20to%20consult%20on%20an%20upcoming%20project." target="_blank" class="w-full py-3 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white text-center font-semibold text-sm flex items-center justify-center gap-2">
-        <i data-lucide="message-circle" class="w-4 h-4"></i>
-        Connect on WhatsApp
-      </a>
-    </div>
+        <div class="whitespace-nowrap">
+          <span class="text-xl font-black text-slate-900">
+            Build
+          </span>
+
+          <span class="text-xl font-black text-red-600">
+            IQ
+          </span>
+
+          <span class="ml-1 text-xl font-black text-slate-900">
+            PROJECTS
+          </span>
+        </div>
+
+        <span class="mt-1 text-[8px] uppercase tracking-wider text-slate-500 font-mono">
+          PMC • Architecture • Turnkey
+        </span>
+
+      </div>
+
+    </a>
+
+
+    <!-- Close Button -->
+    <button
+      id="close-mobile-menu"
+      class="p-2.5 text-slate-500 hover:text-slate-900 rounded-xl hover:bg-slate-100 transition-colors"
+      aria-label="Close menu"
+    >
+      <i data-lucide="x" class="w-6 h-6"></i>
+    </button>
+
   </div>
+
+
+  <!-- Navigation -->
+  <nav class="flex flex-col gap-2 px-6 py-8 text-base font-semibold text-slate-700">
+
+    <a
+      href="#home"
+      class="py-3 px-4 rounded-xl hover:bg-amber-50 hover:text-amber-600 transition-colors"
+    >
+      Home
+    </a>
+
+    <a
+      href="#services"
+      class="py-3 px-4 rounded-xl hover:bg-amber-50 hover:text-amber-600 transition-colors"
+    >
+      Services
+    </a>
+
+    <a
+      href="#featured-project"
+      class="py-3 px-4 rounded-xl hover:bg-amber-50 hover:text-amber-600 transition-colors"
+    >
+      Featured Project
+    </a>
+
+    <a
+      href="#portfolio"
+      class="py-3 px-4 rounded-xl hover:bg-amber-50 hover:text-amber-600 transition-colors"
+    >
+      Portfolio
+    </a>
+
+    <a
+      href="#about-founder"
+      class="py-3 px-4 rounded-xl hover:bg-amber-50 hover:text-amber-600 transition-colors"
+    >
+      About Founder
+    </a>
+
+    <a
+      href="#contact"
+      class="py-3 px-4 rounded-xl hover:bg-amber-50 hover:text-amber-600 transition-colors"
+    >
+      Contact Us
+    </a>
+
+  </nav>
+
+
+  <!-- Bottom Actions -->
+  <div class="mt-auto px-6 pb-8 pt-6 border-t border-slate-200 space-y-3">
+
+    <!-- Consultation -->
+    <a
+      href="#contact"
+      class="w-full py-3.5 rounded-xl bg-gradient-to-r from-amber-500 to-yellow-500 hover:from-amber-400 hover:to-yellow-400 text-slate-950 text-center font-bold text-sm block shadow-lg shadow-amber-500/20 transition-all"
+    >
+      Book Consultation
+    </a>
+
+    <!-- WhatsApp -->
+    <a
+      href="https://wa.me/919820012345?text=Hello%20BuildIQ%20Projects%2C%20I%20would%20like%20to%20consult%20on%20an%20upcoming%20project."
+      target="_blank"
+      class="w-full py-3.5 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white text-center font-semibold text-sm flex items-center justify-center gap-2 transition-colors"
+    >
+      <i data-lucide="message-circle" class="w-4 h-4"></i>
+      Connect on WhatsApp
+    </a>
+
+  </div>
+
+</div>
 
   <!-- =========================================================================
        1. HERO SECTION (MAIN BANNER)
        ========================================================================= -->
-  <section id="home" class="relative pt-32 pb-20 lg:pt-40 lg:pb-32 overflow-hidden bg-grid-pattern">
-    <!-- Ambient Radial Glows -->
-    <div class="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[500px] bg-amber-500/10 rounded-full blur-[140px] pointer-events-none"></div>
-    <div class="absolute top-1/3 -right-20 w-[450px] h-[450px] bg-blue-600/10 rounded-full blur-[120px] pointer-events-none"></div>
+  <section id="home"
+  class="relative pt-32 pb-20 lg:pt-40 lg:pb-32 overflow-hidden bg-grid-pattern">
 
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
-        
-        <!-- Left Hero Content Column -->
-        <div class="lg:col-span-7 space-y-7 reveal-on-scroll">
-          
-          <!-- Eyebrow Badge -->
-          <div class="inline-flex items-center gap-2.5 px-3.5 py-1.5 rounded-full bg-amber-950/60 border border-amber-500/30 text-amber-300 text-xs sm:text-sm font-semibold tracking-wide">
-            <i data-lucide="shield-check" class="w-4 h-4 text-amber-400"></i>
-            <span>20+ Years Ground-Level Civil Engineering Experience</span>
+  <!-- Ambient Radial Glows -->
+  <div
+    class="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2
+           w-[700px] h-[500px] bg-amber-500/10 rounded-full blur-[140px]
+           pointer-events-none">
+  </div>
+
+  <div
+    class="absolute top-1/3 -right-20 w-[450px] h-[450px]
+           bg-blue-600/10 rounded-full blur-[120px] pointer-events-none">
+  </div>
+
+
+  <!-- Main Container -->
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
+
+
+      <!-- ========================================================= -->
+      <!-- LEFT HERO CONTENT -->
+      <!-- ========================================================= -->
+
+      <div class="lg:col-span-7 space-y-7 reveal-on-scroll">
+
+
+        <!-- Eyebrow Badge -->
+        <div
+          class="inline-flex items-center gap-2.5 px-3.5 py-1.5 rounded-full
+                 bg-amber-50 border border-amber-500/30 text-amber-700
+                 text-xs sm:text-sm font-semibold tracking-wide">
+
+          <i
+            data-lucide="shield-check"
+            class="w-4 h-4 text-amber-600">
+          </i>
+
+          <span>
+            20+ Years Ground-Level Civil Engineering Experience
+          </span>
+
+        </div>
+
+
+        <!-- Main Heading -->
+        <h1
+          class="text-3xl sm:text-3xl md:text-4xl lg:text-5xl
+                 font-black text-slate-900 tracking-tight leading-[1.12]">
+
+          Engineering-Led
+
+          <span class="gold-gradient-text">
+            Project Management
+          </span>,
+
+          Architecture & Turnkey Construction Across India.
+
+        </h1>
+
+
+        <!-- Sub Heading -->
+        <p
+          class="text-base sm:text-lg text-slate-600
+                 leading-relaxed font-body">
+
+          Headquartered in Mumbai with Pan-India execution.
+          We deliver independent client-side PMC, in-house architectural
+          design, and complete turnkey civil execution backed by 20+ years
+          of ground-level engineering experience.
+
+        </p>
+
+
+        <!-- ========================================================= -->
+        <!-- THREE KEY HIGHLIGHTS -->
+        <!-- ========================================================= -->
+
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 pt-2">
+
+
+          <!-- Independent PMC -->
+          <div
+            class="p-4 rounded-xl bg-slate-50/80
+                   border border-slate-200
+                   hover:border-amber-500/40
+                   transition-all group">
+
+            <div
+              class="w-8 h-8 rounded-lg bg-amber-500/10
+                     flex items-center justify-center
+                     text-amber-600 mb-2
+                     group-hover:bg-amber-500
+                     group-hover:text-slate-950
+                     transition-colors">
+
+              <i
+                data-lucide="check-circle"
+                class="w-4 h-4">
+              </i>
+
+            </div>
+
+            <h4
+              class="text-xs font-bold text-slate-900
+                     uppercase tracking-wider mb-1">
+
+              Independent PMC
+
+            </h4>
+
+            <p
+              class="text-xs text-slate-500 leading-normal">
+
+              Strict quality audits, contractor bill verification
+              & zero cost overruns.
+
+            </p>
+
           </div>
 
-          <!-- Main Heading -->
-          <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black text-white tracking-tight leading-[1.12]">
-            Engineering-Led <span class="gold-gradient-text">Project Management</span>, Architecture & Turnkey Construction Across India.
-          </h1>
 
-          <!-- Sub-Heading -->
-          <p class="text-base sm:text-lg text-slate-300 leading-relaxed font-body">
-            Headquartered in Mumbai with Pan-India execution. We deliver independent client-side PMC, in-house architectural design, and complete turnkey civil execution backed by 20+ years of ground-level engineering experience.
-          </p>
+          <!-- In-House Turnkey -->
+          <div
+            class="p-4 rounded-xl bg-slate-50/80
+                   border border-slate-200
+                   hover:border-blue-500/40
+                   transition-all group">
 
-          <!-- Key Highlights (3 Core Bullet Points) -->
-          <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 pt-2">
-            
-            <div class="p-4 rounded-xl bg-slate-900/80 border border-slate-800 hover:border-amber-500/40 transition-all group">
-              <div class="w-8 h-8 rounded-lg bg-amber-500/10 flex items-center justify-center text-amber-400 mb-2 group-hover:bg-amber-500 group-hover:text-slate-950 transition-colors">
-                <i data-lucide="check-circle" class="w-4 h-4"></i>
-              </div>
-              <h4 class="text-xs font-bold text-white uppercase tracking-wider mb-1">Independent PMC</h4>
-              <p class="text-xs text-slate-400 leading-normal">Strict quality audits, contractor bill verification & zero cost overruns.</p>
+            <div
+              class="w-8 h-8 rounded-lg bg-blue-500/10
+                     flex items-center justify-center
+                     text-blue-600 mb-2
+                     group-hover:bg-blue-500
+                     group-hover:text-slate-950
+                     transition-colors">
+
+              <i
+                data-lucide="compass"
+                class="w-4 h-4">
+              </i>
+
             </div>
 
-            <div class="p-4 rounded-xl bg-slate-900/80 border border-slate-800 hover:border-blue-500/40 transition-all group">
-              <div class="w-8 h-8 rounded-lg bg-blue-500/10 flex items-center justify-center text-blue-400 mb-2 group-hover:bg-blue-500 group-hover:text-slate-950 transition-colors">
-                <i data-lucide="compass" class="w-4 h-4"></i>
-              </div>
-              <h4 class="text-xs font-bold text-white uppercase tracking-wider mb-1">In-House Turnkey</h4>
-              <p class="text-xs text-slate-400 leading-normal">GFC drawings, structural planning & Lock & Key build under one roof.</p>
-            </div>
+            <h4
+              class="text-xs font-bold text-slate-900
+                     uppercase tracking-wider mb-1">
 
-            <div class="p-4 rounded-xl bg-slate-900/80 border border-slate-800 hover:border-amber-500/40 transition-all group">
-              <div class="w-8 h-8 rounded-lg bg-amber-500/10 flex items-center justify-center text-amber-400 mb-2 group-hover:bg-amber-500 group-hover:text-slate-950 transition-colors">
-                <i data-lucide="scale" class="w-4 h-4"></i>
-              </div>
-              <h4 class="text-xs font-bold text-white uppercase tracking-wider mb-1">Arbitration Claims</h4>
-              <p class="text-xs text-slate-400 leading-normal">Contract claim management, delay analysis & arbitration awards.</p>
-            </div>
+              In-House Turnkey
+
+            </h4>
+
+            <p
+              class="text-xs text-slate-500 leading-normal">
+
+              GFC drawings, structural planning & Lock & Key
+              build under one roof.
+
+            </p>
 
           </div>
 
-          <!-- Action Buttons -->
-          <div class="flex flex-wrap items-center gap-4 pt-4">
-            <a href="#portfolio" class="px-7 py-3.5 rounded-xl bg-gradient-to-r from-amber-500 to-yellow-500 hover:from-amber-400 hover:to-yellow-400 text-slate-950 font-bold text-sm shadow-xl shadow-amber-500/25 transition-all hover:scale-105 flex items-center gap-2 border border-amber-300/60">
-              <i data-lucide="folder-kanban" class="w-4 h-4"></i>
-              <span>View Projects</span>
-            </a>
 
-            <a href="https://wa.me/919820012345?text=Hello%20BuildIQ%20Projects%2C%20I%20would%20like%20to%20discuss%20an%20engineering%20consultation%20for%20our%20project." target="_blank" class="px-7 py-3.5 rounded-xl bg-emerald-600/20 hover:bg-emerald-600/30 text-emerald-300 font-bold text-sm border border-emerald-500/40 transition-all hover:scale-105 flex items-center gap-2 whatsapp-trigger-btn">
-              <i data-lucide="message-circle" class="w-4 h-4 text-emerald-400"></i>
-              <span>Connect on WhatsApp</span>
-            </a>
-          </div>
+          <!-- Arbitration Claims -->
+          <div
+            class="p-4 rounded-xl bg-slate-50/80
+                   border border-slate-200
+                   hover:border-amber-500/40
+                   transition-all group">
 
-          <!-- Trust Badges & Track Record -->
-          <div class="pt-6 border-t border-slate-800/80 flex flex-wrap items-center gap-6 text-xs text-slate-400">
-            <div class="flex items-center gap-2 font-mono">
-              <i data-lucide="map-pin" class="w-3.5 h-3.5 text-amber-400"></i>
-              <span>HQ: Mumbai, Maharashtra</span>
+            <div
+              class="w-8 h-8 rounded-lg bg-amber-500/10
+                     flex items-center justify-center
+                     text-amber-600 mb-2
+                     group-hover:bg-amber-500
+                     group-hover:text-slate-950
+                     transition-colors">
+
+              <i
+                data-lucide="scale"
+                class="w-4 h-4">
+              </i>
+
             </div>
-            <div class="flex items-center gap-2 font-mono">
-              <i data-lucide="globe" class="w-3.5 h-3.5 text-blue-400"></i>
-              <span>Execution: Pan-India</span>
-            </div>
-            <div class="flex items-center gap-2 font-mono">
-              <i data-lucide="award" class="w-3.5 h-3.5 text-amber-400"></i>
-              <span>Western Rly & MES Pedigree</span>
-            </div>
+
+            <h4
+              class="text-xs font-bold text-slate-900
+                     uppercase tracking-wider mb-1">
+
+              Arbitration Claims
+
+            </h4>
+
+            <p
+              class="text-xs text-slate-500 leading-normal">
+
+              Contract claim management, delay analysis
+              & arbitration awards.
+
+            </p>
+
           </div>
 
         </div>
 
-        <!-- Right Hero Visual Column (Engineering Blueprint & Site Showcase) -->
-        <div class="lg:col-span-5 relative reveal-on-scroll">
-          <div class="relative rounded-2xl overflow-hidden glass-panel-gold p-2 border border-amber-500/30 shadow-2xl">
-            
-            <!-- Site Image with Overlay -->
-            <div class="relative h-96 sm:h-[430px] rounded-xl overflow-hidden group">
-              <img src="assets/images/hero_pmc_site_real.jpg" alt="Civil Engineering Construction Site Management" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
-              <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/40 to-transparent"></div>
 
-              <!-- Top Live Status Badge -->
-              <div class="absolute top-4 left-4 flex items-center gap-2 px-3 py-1.5 rounded-full bg-slate-950/80 backdrop-blur-md border border-amber-500/40 text-xs font-mono text-amber-300">
-                <span class="w-2 h-2 rounded-full bg-emerald-400 animate-ping"></span>
-                <span>Active Site PMC Oversight</span>
-              </div>
+        <!-- ========================================================= -->
+        <!-- ACTION BUTTONS -->
+        <!-- ========================================================= -->
 
-              <!-- Floating Metric 1: Bill Auditing -->
-              <div class="absolute top-16 right-4 p-3 rounded-xl bg-slate-950/90 backdrop-blur-md border border-slate-700 text-xs shadow-xl space-y-1">
-                <div class="flex items-center gap-1.5 text-slate-400">
-                  <i data-lucide="file-check-2" class="w-3.5 h-3.5 text-amber-400"></i>
-                  <span>RA Bill Audit</span>
-                </div>
-                <div class="text-sm font-black text-white font-mono">Zero Billing Leakage</div>
-              </div>
+        <div
+          class="flex flex-wrap items-center gap-4 pt-4">
 
-              <!-- Bottom Overlay Card -->
-              <div class="absolute bottom-4 left-4 right-4 p-4 rounded-xl bg-slate-950/95 backdrop-blur-lg border border-slate-800 space-y-2">
-                <div class="flex items-center justify-between text-xs">
-                  <span class="font-bold text-white flex items-center gap-1.5">
-                    <i data-lucide="check-circle-2" class="w-4 h-4 text-amber-400"></i>
-                    B.Tech Civil Engineering Direct Oversight
-                  </span>
-                  <span class="text-amber-400 font-mono font-bold">20+ Yrs Exp</span>
-                </div>
-                <p class="text-[11px] text-slate-400 leading-snug">
-                  Eliminating contractor excuses through on-ground BBS bar testing, cube crushing audits, and physical measurement sheet verification.
-                </p>
-              </div>
 
-            </div>
+          <!-- View Projects -->
+          <a
+            href="#portfolio"
+            class="px-7 py-3.5 rounded-xl
+                   bg-gradient-to-r from-amber-500 to-yellow-500
+                   hover:from-amber-400 hover:to-yellow-400
+                   text-slate-950 font-bold text-sm
+                   shadow-xl shadow-amber-500/25
+                   transition-all hover:scale-105
+                   flex items-center gap-2
+                   border border-amber-300/60">
+
+            <i
+              data-lucide="folder-kanban"
+              class="w-4 h-4">
+            </i>
+
+            <span>
+              View Projects
+            </span>
+
+          </a>
+
+
+          <!-- WhatsApp -->
+          <a
+            href="https://wa.me/919820012345?text=Hello%20BuildIQ%20Projects%2C%20I%20would%20like%20to%20discuss%20an%20engineering%20consultation%20for%20our%20project."
+            target="_blank"
+            rel="noopener noreferrer"
+            class="px-7 py-3.5 rounded-xl
+                   bg-emerald-600/20
+                   hover:bg-emerald-600/30
+                   text-emerald-700
+                   font-bold text-sm
+                   border border-emerald-500/40
+                   transition-all hover:scale-105
+                   flex items-center gap-2
+                   whatsapp-trigger-btn">
+
+            <i
+              data-lucide="message-circle"
+              class="w-4 h-4 text-emerald-600">
+            </i>
+
+            <span>
+              Connect on WhatsApp
+            </span>
+
+          </a>
+
+        </div>
+
+
+        <!-- ========================================================= -->
+        <!-- TRUST BADGES -->
+        <!-- ========================================================= -->
+
+        <div
+          class="pt-6 border-t border-slate-200/80
+                 flex flex-wrap items-center gap-6
+                 text-xs text-slate-500">
+
+
+          <!-- Mumbai -->
+          <div
+            class="flex items-center gap-2 font-mono">
+
+            <i
+              data-lucide="map-pin"
+              class="w-3.5 h-3.5 text-amber-600">
+            </i>
+
+            <span>
+              HQ: Mumbai, Maharashtra
+            </span>
+
           </div>
+
+
+          <!-- Pan India -->
+          <div
+            class="flex items-center gap-2 font-mono">
+
+            <i
+              data-lucide="globe"
+              class="w-3.5 h-3.5 text-blue-600">
+            </i>
+
+            <span>
+              Execution: Pan-India
+            </span>
+
+          </div>
+
+
+          <!-- Experience -->
+          <div
+            class="flex items-center gap-2 font-mono">
+
+            <i
+              data-lucide="award"
+              class="w-3.5 h-3.5 text-amber-600">
+            </i>
+
+            <span>
+              Western Rly & MES Pedigree
+            </span>
+
+          </div>
+
         </div>
 
       </div>
+
+
+
+      <!-- ========================================================= -->
+      <!-- RIGHT HERO IMAGE SLIDER -->
+      <!-- ========================================================= -->
+
+      <div
+        class="lg:col-span-5 relative reveal-on-scroll">
+
+        <div
+          class="relative rounded-2xl overflow-hidden
+                 glass-panel-gold p-2
+                 border border-amber-500/30
+                 shadow-2xl">
+
+
+          <!-- IMAGE CONTAINER -->
+          <div
+            class="relative h-96 sm:h-[430px]
+                   rounded-xl overflow-hidden group">
+
+
+            <!-- ================================================= -->
+            <!-- SLIDER IMAGES -->
+            <!-- ================================================= -->
+
+            <div
+              id="hero-slider"
+              class="absolute inset-0">
+
+
+              <!-- IMAGE 1 -->
+              <img
+                src="assets/images/hero_section_img1.jpg"
+                alt="Civil Engineering Construction Site Management"
+                class="hero-slide absolute inset-0
+                       w-full h-full object-cover
+                       opacity-100
+                       transition-opacity duration-1000">
+
+
+              <!-- IMAGE 2 -->
+              <img
+                src="assets/images/hero_section_img2.jpg"
+                alt="Construction Project Management"
+                class="hero-slide absolute inset-0
+                       w-full h-full object-cover
+                       opacity-0
+                       transition-opacity duration-1000">
+
+
+              <!-- IMAGE 3 -->
+              <img
+                src="assets/images/hero_section_img3.jpg"
+                alt="Civil Engineering Project"
+                class="hero-slide absolute inset-0
+                       w-full h-full object-cover
+                       opacity-0
+                       transition-opacity duration-1000">
+
+
+              <!-- IMAGE 4 -->
+              <img
+                src="assets/images/hero_section_img4.png"
+                alt="Turnkey Construction Project"
+                class="hero-slide absolute inset-0
+                       w-full h-full object-cover
+                       opacity-0
+                       transition-opacity duration-1000">
+
+            </div>
+
+
+
+            <!-- ================================================= -->
+            <!-- DARK GRADIENT OVERLAY -->
+            <!-- ================================================= -->
+
+            <div
+              class="absolute inset-0
+                     bg-gradient-to-t
+                     from-slate-950
+                     via-slate-950/40
+                     to-transparent
+                     pointer-events-none">
+            </div>
+
+
+
+            <!-- ================================================= -->
+            <!-- TOP LIVE STATUS BADGE -->
+            <!-- ================================================= -->
+
+            <div
+              class="absolute top-4 left-4
+                     flex items-center gap-2
+                     px-3 py-1.5 rounded-full
+                     bg-white/80 backdrop-blur-md
+                     border border-amber-500/40
+                     text-xs font-mono
+                     text-amber-700">
+
+              <span
+                class="w-2 h-2 rounded-full
+                       bg-emerald-400 animate-ping">
+              </span>
+
+              <span>
+                Active Site PMC Oversight
+              </span>
+
+            </div>
+
+
+
+            <!-- ================================================= -->
+            <!-- FLOATING BILL AUDIT CARD -->
+            <!-- ================================================= -->
+
+            <div
+              class="absolute top-16 right-4
+                     p-3 rounded-xl
+                     bg-white/90 backdrop-blur-md
+                     border border-slate-300
+                     text-xs shadow-xl space-y-1">
+
+              <div
+                class="flex items-center gap-1.5
+                       text-slate-500">
+
+                <i
+                  data-lucide="file-check-2"
+                  class="w-3.5 h-3.5 text-amber-600">
+                </i>
+
+                <span>
+                  RA Bill Audit
+                </span>
+
+              </div>
+
+              <div
+                class="text-sm font-black
+                       text-slate-900 font-mono">
+
+                Zero Billing Leakage
+
+              </div>
+
+            </div>
+
+
+
+            <!-- ================================================= -->
+            <!-- BOTTOM OVERLAY CARD -->
+            <!-- ================================================= -->
+
+            <div
+              class="absolute bottom-4 left-4 right-4
+                     p-4 rounded-xl
+                     bg-white/95 backdrop-blur-lg
+                     border border-slate-200
+                     space-y-2">
+
+
+              <div
+                class="flex items-center justify-between text-xs">
+
+
+                <span
+                  class="font-bold text-slate-900
+                         flex items-center gap-1.5">
+
+                  <i
+                    data-lucide="check-circle-2"
+                    class="w-4 h-4 text-amber-600">
+                  </i>
+
+                  B.Tech Civil Engineering Direct Oversight
+
+                </span>
+
+
+                <span
+                  class="text-amber-600
+                         font-mono font-bold">
+
+                  20+ Yrs Exp
+
+                </span>
+
+              </div>
+
+
+              <p
+                class="text-[11px] text-slate-500
+                       leading-snug">
+
+                Eliminating contractor excuses through on-ground
+                BBS bar testing, cube crushing audits, and physical
+                measurement sheet verification.
+
+              </p>
+
+            </div>
+
+
+
+            <!-- ================================================= -->
+            <!-- SLIDER DOTS -->
+            <!-- ================================================= -->
+
+            <div
+              class="absolute bottom-2 left-1/2
+                     -translate-x-1/2
+                     flex items-center gap-1.5
+                     z-20">
+
+              <span
+                class="hero-dot w-2 h-2 rounded-full
+                       bg-white transition-all duration-500">
+              </span>
+
+              <span
+                class="hero-dot w-2 h-2 rounded-full
+                       bg-white/40 transition-all duration-500">
+              </span>
+
+              <span
+                class="hero-dot w-2 h-2 rounded-full
+                       bg-white/40 transition-all duration-500">
+              </span>
+
+              <span
+                class="hero-dot w-2 h-2 rounded-full
+                       bg-white/40 transition-all duration-500">
+              </span>
+
+            </div>
+
+
+          </div>
+
+        </div>
+
+      </div>
+
     </div>
-  </section>
+
+  </div>
+
+</section>
 
   <!-- =========================================================================
        2. FEATURED PROJECT SPOTLIGHT (SIKAR, RAJASTHAN)
        ========================================================================= -->
-  <section id="featured-project" class="py-20 lg:py-28 bg-brand-surface relative border-t border-b border-slate-800">
+  <section id="featured-project" class="py-20 lg:py-28 bg-slate-50 relative border-t border-b border-slate-200">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       
       <!-- Section Header -->
       <div class="max-w-3xl mb-12 reveal-on-scroll">
-        <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-amber-500/10 border border-amber-500/30 text-amber-400 text-xs font-mono font-semibold uppercase tracking-wider mb-4">
-          <i data-lucide="star" class="w-3.5 h-3.5 text-amber-400"></i>
+        <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-amber-500/10 border border-amber-500/30 text-amber-600 text-xs font-mono font-semibold uppercase tracking-wider mb-4">
+          <i data-lucide="star" class="w-3.5 h-3.5 text-amber-600"></i>
           <span>Featured Project Spotlight</span>
         </div>
-        <h2 class="text-2xl sm:text-3xl lg:text-4xl font-black text-white tracking-tight">
+        <h2 class="text-2xl sm:text-3xl lg:text-4xl font-black text-slate-900 tracking-tight">
           G+4 Multi-Story Development — <span class="gold-gradient-text">Sikar, Rajasthan</span>
         </h2>
-        <p class="text-slate-400 text-sm sm:text-base mt-2">
+        <p class="text-slate-500 text-sm sm:text-base mt-2">
           Demonstrating outstation turnkey PMC and architectural excellence with complete engineering governance.
         </p>
       </div>
@@ -340,13 +1016,13 @@
         <!-- Left: Image & Progress Showcase -->
         <div class="lg:col-span-7 space-y-5 reveal-on-scroll">
           <div class="relative rounded-2xl overflow-hidden border border-amber-500/30 shadow-2xl group">
-            <img src="assets/images/hero_pmc_architecture.jpg" alt="G+4 Multi-Story Development Sikar Rajasthan" class="w-full h-80 sm:h-[420px] object-cover group-hover:scale-105 transition-transform duration-700">
+            <img src="assets/images/project_img.jpeg" alt="G+4 Multi-Story Development Sikar Rajasthan" class="w-full h-80 sm:h-[420px] object-cover group-hover:scale-105 transition-transform duration-700">
             <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/30 to-transparent"></div>
 
             <!-- Project Status Badge -->
-            <div class="absolute top-5 left-5 bg-slate-950/90 backdrop-blur-md border border-amber-500/40 px-4 py-2 rounded-xl">
-              <div class="text-[10px] uppercase font-mono tracking-wider text-slate-400">Project Status</div>
-              <div class="text-lg font-black text-amber-400 flex items-center gap-2">
+            <div class="absolute top-5 left-5 bg-white/90 backdrop-blur-md border border-amber-500/40 px-4 py-2 rounded-xl">
+              <div class="text-[10px] uppercase font-mono tracking-wider text-slate-500">Project Status</div>
+              <div class="text-lg font-black text-amber-600 flex items-center gap-2">
                 <span>95% Completed</span>
                 <span class="flex h-2.5 w-2.5 relative">
                   <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
@@ -356,34 +1032,34 @@
             </div>
 
             <!-- Location Badge -->
-            <div class="absolute top-5 right-5 bg-slate-950/90 backdrop-blur-md border border-slate-700 px-3.5 py-1.5 rounded-xl text-xs font-mono text-slate-300 flex items-center gap-1.5">
-              <i data-lucide="map-pin" class="w-3.5 h-3.5 text-amber-400"></i>
+            <div class="absolute top-5 right-5 bg-white/90 backdrop-blur-md border border-slate-300 px-3.5 py-1.5 rounded-xl text-xs font-mono text-slate-600 flex items-center gap-1.5">
+              <i data-lucide="map-pin" class="w-3.5 h-3.5 text-amber-600"></i>
               <span>Sikar, Rajasthan</span>
             </div>
 
             <!-- Scope Tag Overlay -->
-            <div class="absolute bottom-5 left-5 right-5 bg-slate-950/90 backdrop-blur-lg border border-slate-800 p-4 rounded-xl">
-              <div class="text-xs font-mono uppercase tracking-wider text-amber-400 font-bold mb-1">Scope Delivered</div>
-              <p class="text-sm font-semibold text-white">
+            <div class="absolute bottom-5 left-5 right-5 bg-white/90 backdrop-blur-lg border border-slate-200 p-4 rounded-xl">
+              <div class="text-xs font-mono uppercase tracking-wider text-amber-600 font-bold mb-1">Scope Delivered</div>
+              <p class="text-sm font-semibold text-slate-900">
                 Complete Architectural Design & End-to-End Project Management Consultancy (PMC)
               </p>
             </div>
           </div>
 
           <!-- Visual Progress Bar -->
-          <div class="p-5 rounded-2xl bg-slate-900/90 border border-slate-800 space-y-3">
+          <div class="p-5 rounded-2xl bg-slate-50/90 border border-slate-200 space-y-3">
             <div class="flex justify-between items-center text-xs font-mono">
-              <span class="text-slate-300 font-semibold">Project Execution Progress</span>
-              <span class="text-amber-400 font-bold">95% Final Finishing & Snagging</span>
+              <span class="text-slate-600 font-semibold">Project Execution Progress</span>
+              <span class="text-amber-600 font-bold">95% Final Finishing & Snagging</span>
             </div>
-            <div class="w-full h-3 bg-slate-950 rounded-full overflow-hidden border border-slate-800">
+            <div class="w-full h-3 bg-white rounded-full overflow-hidden border border-slate-200">
               <div class="h-full bg-gradient-to-r from-amber-500 via-amber-400 to-emerald-400 rounded-full" style="width: 95%;"></div>
             </div>
-            <div class="grid grid-cols-4 text-[10px] font-mono text-slate-400 pt-1">
+            <div class="grid grid-cols-4 text-[10px] font-mono text-slate-500 pt-1">
               <div>✓ Foundation</div>
               <div>✓ RCC Structure</div>
               <div>✓ MEP & Masonry</div>
-              <div class="text-amber-300 font-bold">● Final Handover</div>
+              <div class="text-amber-700 font-bold">● Final Handover</div>
             </div>
           </div>
 
@@ -392,12 +1068,12 @@
         <!-- Right: Project Overview & Scope Breakdown -->
         <div class="lg:col-span-5 space-y-6 reveal-on-scroll">
           
-          <div class="p-6 rounded-2xl bg-slate-900/90 border border-slate-800 space-y-4">
-            <h3 class="text-lg font-bold text-white flex items-center gap-2">
-              <i data-lucide="info" class="w-5 h-5 text-amber-400"></i>
+          <div class="p-6 rounded-2xl bg-slate-50/90 border border-slate-200 space-y-4">
+            <h3 class="text-lg font-bold text-slate-900 flex items-center gap-2">
+              <i data-lucide="info" class="w-5 h-5 text-amber-600"></i>
               <span>Project Overview</span>
             </h3>
-            <p class="text-slate-300 text-sm leading-relaxed">
+            <p class="text-slate-600 text-sm leading-relaxed">
               A premier multi-story development executed with complete engineering oversight. By managing architectural planning and on-site PMC under a single window, BuildIQ Projects eliminated contractor-architect disputes, maintained strict material quality, and ensured onschedule site delivery.
             </p>
           </div>
@@ -405,33 +1081,33 @@
           <!-- Scope Breakdown Cards -->
           <div class="space-y-3">
             
-            <div class="p-4 rounded-xl bg-slate-900/60 border border-slate-800 flex items-start gap-3.5 hover:border-amber-500/30 transition-colors">
-              <div class="w-8 h-8 rounded-lg bg-amber-500/10 flex-shrink-0 flex items-center justify-center text-amber-400 mt-0.5">
+            <div class="p-4 rounded-xl bg-slate-50/60 border border-slate-200 flex items-start gap-3.5 hover:border-amber-500/30 transition-colors">
+              <div class="w-8 h-8 rounded-lg bg-amber-500/10 flex-shrink-0 flex items-center justify-center text-amber-600 mt-0.5">
                 <i data-lucide="drafting-compass" class="w-4 h-4"></i>
               </div>
               <div>
-                <h4 class="text-sm font-bold text-white">In-House Architectural & GFC Drawings</h4>
-                <p class="text-xs text-slate-400 mt-0.5">Comprehensive architectural layouts, elevation 3Ds, and 100% Good For Construction working details.</p>
+                <h4 class="text-sm font-bold text-slate-900">In-House Architectural & GFC Drawings</h4>
+                <p class="text-xs text-slate-500 mt-0.5">Comprehensive architectural layouts, elevation 3Ds, and 100% Good For Construction working details.</p>
               </div>
             </div>
 
-            <div class="p-4 rounded-xl bg-slate-900/60 border border-slate-800 flex items-start gap-3.5 hover:border-amber-500/30 transition-colors">
-              <div class="w-8 h-8 rounded-lg bg-blue-500/10 flex-shrink-0 flex items-center justify-center text-blue-400 mt-0.5">
+            <div class="p-4 rounded-xl bg-slate-50/60 border border-slate-200 flex items-start gap-3.5 hover:border-amber-500/30 transition-colors">
+              <div class="w-8 h-8 rounded-lg bg-blue-500/10 flex-shrink-0 flex items-center justify-center text-blue-600 mt-0.5">
                 <i data-lucide="shield-check" class="w-4 h-4"></i>
               </div>
               <div>
-                <h4 class="text-sm font-bold text-white">Full On-Site PMC & BBS Steel Verification</h4>
-                <p class="text-xs text-slate-400 mt-0.5">Daily engineer supervision, bar-bending schedule adherence, and structural stability audits.</p>
+                <h4 class="text-sm font-bold text-slate-900">Full On-Site PMC & BBS Steel Verification</h4>
+                <p class="text-xs text-slate-500 mt-0.5">Daily engineer supervision, bar-bending schedule adherence, and structural stability audits.</p>
               </div>
             </div>
 
-            <div class="p-4 rounded-xl bg-slate-900/60 border border-slate-800 flex items-start gap-3.5 hover:border-amber-500/30 transition-colors">
-              <div class="w-8 h-8 rounded-lg bg-emerald-500/10 flex-shrink-0 flex items-center justify-center text-emerald-400 mt-0.5">
+            <div class="p-4 rounded-xl bg-slate-50/60 border border-slate-200 flex items-start gap-3.5 hover:border-amber-500/30 transition-colors">
+              <div class="w-8 h-8 rounded-lg bg-emerald-500/10 flex-shrink-0 flex items-center justify-center text-emerald-600 mt-0.5">
                 <i data-lucide="badge-percent" class="w-4 h-4"></i>
               </div>
               <div>
-                <h4 class="text-sm font-bold text-white">Zero Contractor Billing Overrun</h4>
-                <p class="text-xs text-slate-400 mt-0.5">Physical measurement sheet validation before approving contractor Running Account (RA) bills.</p>
+                <h4 class="text-sm font-bold text-slate-900">Zero Contractor Billing Overrun</h4>
+                <p class="text-xs text-slate-500 mt-0.5">Physical measurement sheet validation before approving contractor Running Account (RA) bills.</p>
               </div>
             </div>
 
@@ -443,8 +1119,8 @@
               <i data-lucide="sparkles" class="w-4 h-4"></i>
               <span>Discuss Similar Outstation Project</span>
             </a>
-            <button class="open-report-modal-btn px-4 py-3 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-200 text-xs sm:text-sm font-medium border border-slate-700 flex items-center gap-2">
-              <i data-lucide="file-text" class="w-4 h-4 text-amber-400"></i>
+            <button class="open-report-modal-btn px-4 py-3 rounded-xl bg-slate-100 hover:bg-slate-700 text-slate-700 text-xs sm:text-sm font-medium border border-slate-300 flex items-center gap-2">
+              <i data-lucide="file-text" class="w-4 h-4 text-amber-600"></i>
               <span>View Sample Audit Report</span>
             </button>
           </div>
@@ -459,19 +1135,19 @@
   <!-- =========================================================================
        3. WHY BUILDIQ PROJECTS? (THE SINGLEWINDOW ADVANTAGE)
        ========================================================================= -->
-  <section id="why-buildiq" class="py-20 lg:py-28 bg-brand-dark relative border-b border-slate-800 bg-grid-pattern">
+  <section id="why-buildiq" class="py-20 lg:py-28 bg-white relative border-b border-slate-200 bg-grid-pattern">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       
       <!-- Section Header -->
       <div class="text-center max-w-3xl mx-auto mb-16 reveal-on-scroll">
-        <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-amber-500/10 border border-amber-500/30 text-amber-400 text-xs font-mono font-semibold uppercase tracking-wider mb-4">
+        <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-amber-500/10 border border-amber-500/30 text-amber-600 text-xs font-mono font-semibold uppercase tracking-wider mb-4">
           <i data-lucide="zap" class="w-3.5 h-3.5"></i>
           <span>The SingleWindow Advantage</span>
         </div>
-        <h2 class="text-3xl sm:text-4xl font-black text-white tracking-tight">
+        <h2 class="text-3xl sm:text-4xl font-black text-slate-900 tracking-tight">
           How We Deliver Value Without <span class="gold-gradient-text">Multi-Agency Chaos</span>
         </h2>
-        <p class="text-slate-400 text-sm sm:text-base mt-3">
+        <p class="text-slate-500 text-sm sm:text-base mt-3">
           Traditional construction fails when architects, contractors, and clients blame each other. BuildIQ provides unified engineering governance and complete accountability.
         </p>
       </div>
@@ -480,60 +1156,60 @@
       <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-14">
         
         <!-- Pillar 1 -->
-        <div class="p-8 rounded-2xl bg-brand-surface border border-slate-800 hover:border-amber-500/40 transition-all duration-300 relative group flex flex-col justify-between reveal-on-scroll">
+        <div class="p-8 rounded-2xl bg-slate-50 border border-slate-200 hover:border-amber-500/40 transition-all duration-300 relative group flex flex-col justify-between reveal-on-scroll">
           <div class="space-y-4">
-            <div class="w-14 h-14 rounded-2xl bg-amber-500/10 border border-amber-500/30 flex items-center justify-center text-amber-400 text-xl font-black group-hover:scale-110 group-hover:bg-amber-500 group-hover:text-slate-950 transition-all">
+            <div class="w-14 h-14 rounded-2xl bg-amber-500/10 border border-amber-500/30 flex items-center justify-center text-amber-600 text-xl font-black group-hover:scale-110 group-hover:bg-amber-500 group-hover:text-slate-950 transition-all">
               1
             </div>
-            <h3 class="text-xl font-extrabold text-white">
+            <h3 class="text-xl font-extrabold text-slate-900">
               Independent PMC as Primary Focus
             </h3>
-            <p class="text-slate-300 text-sm leading-relaxed">
+            <p class="text-slate-600 text-sm leading-relaxed">
               We act strictly as your on-site representative. We audit contractors, test raw materials, inspect steel and concrete grades, verify exact physical measurements, and protect your budget.
             </p>
           </div>
-          <div class="pt-6 mt-6 border-t border-slate-800/80 text-xs font-mono text-amber-400 flex items-center gap-1.5">
+          <div class="pt-6 mt-6 border-t border-slate-200/80 text-xs font-mono text-amber-600 flex items-center gap-1.5">
             <i data-lucide="check" class="w-4 h-4"></i>
             <span>100% Client-Side Representation</span>
           </div>
         </div>
 
         <!-- Pillar 2 -->
-        <div class="p-8 rounded-2xl bg-brand-surface border border-amber-500/30 shadow-xl shadow-amber-500/5 hover:border-amber-400 transition-all duration-300 relative group flex flex-col justify-between reveal-on-scroll">
+        <div class="p-8 rounded-2xl bg-slate-50 border border-amber-500/30 shadow-xl shadow-amber-500/5 hover:border-amber-400 transition-all duration-300 relative group flex flex-col justify-between reveal-on-scroll">
           <div class="absolute -top-3 right-6 px-3 py-1 bg-amber-500 text-slate-950 text-[10px] font-black uppercase tracking-wider rounded-full shadow">
             Comprehensive Solution
           </div>
           <div class="space-y-4">
-            <div class="w-14 h-14 rounded-2xl bg-blue-500/10 border border-blue-500/30 flex items-center justify-center text-blue-400 text-xl font-black group-hover:scale-110 group-hover:bg-blue-500 group-hover:text-slate-950 transition-all">
+            <div class="w-14 h-14 rounded-2xl bg-blue-500/10 border border-blue-500/30 flex items-center justify-center text-blue-600 text-xl font-black group-hover:scale-110 group-hover:bg-blue-500 group-hover:text-slate-950 transition-all">
               2
             </div>
-            <h3 class="text-xl font-extrabold text-white">
+            <h3 class="text-xl font-extrabold text-slate-900">
               Full Turnkey Construction (Lock & Key)
             </h3>
-            <p class="text-slate-300 text-sm leading-relaxed">
+            <p class="text-slate-600 text-sm leading-relaxed">
               Beyond consultancy, we undertake complete Turnkey Construction Contracts. Founded by a B.Tech Civil Engineer with an in-house architectural wing, we manage everything from excavation and structural safety to final key handover without vendor mismatches.
             </p>
           </div>
-          <div class="pt-6 mt-6 border-t border-slate-800/80 text-xs font-mono text-blue-400 flex items-center gap-1.5">
+          <div class="pt-6 mt-6 border-t border-slate-200/80 text-xs font-mono text-blue-600 flex items-center gap-1.5">
             <i data-lucide="key" class="w-4 h-4"></i>
             <span>Excavation to Final Key Handover</span>
           </div>
         </div>
 
         <!-- Pillar 3 -->
-        <div class="p-8 rounded-2xl bg-brand-surface border border-slate-800 hover:border-emerald-500/40 transition-all duration-300 relative group flex flex-col justify-between reveal-on-scroll">
+        <div class="p-8 rounded-2xl bg-slate-50 border border-slate-200 hover:border-emerald-500/40 transition-all duration-300 relative group flex flex-col justify-between reveal-on-scroll">
           <div class="space-y-4">
-            <div class="w-14 h-14 rounded-2xl bg-emerald-500/10 border border-emerald-500/30 flex items-center justify-center text-emerald-400 text-xl font-black group-hover:scale-110 group-hover:bg-emerald-500 group-hover:text-slate-950 transition-all">
+            <div class="w-14 h-14 rounded-2xl bg-emerald-500/10 border border-emerald-500/30 flex items-center justify-center text-emerald-600 text-xl font-black group-hover:scale-110 group-hover:bg-emerald-500 group-hover:text-slate-950 transition-all">
               3
             </div>
-            <h3 class="text-xl font-extrabold text-white">
+            <h3 class="text-xl font-extrabold text-slate-900">
               Proven Pan-India Capability
             </h3>
-            <p class="text-slate-300 text-sm leading-relaxed">
+            <p class="text-slate-600 text-sm leading-relaxed">
               From high-density urban redevelopment in Mumbai to large-scale multi-story builds across other states, we deploy standardized engineering processes anywhere in India.
             </p>
           </div>
-          <div class="pt-6 mt-6 border-t border-slate-800/80 text-xs font-mono text-emerald-400 flex items-center gap-1.5">
+          <div class="pt-6 mt-6 border-t border-slate-200/80 text-xs font-mono text-emerald-600 flex items-center gap-1.5">
             <i data-lucide="map" class="w-4 h-4"></i>
             <span>Mumbai & Multi-State Deployment</span>
           </div>
@@ -542,43 +1218,43 @@
       </div>
 
       <!-- Chaos vs Unified Model Comparison Banner -->
-      <div class="p-6 sm:p-8 rounded-2xl bg-slate-900/90 border border-slate-800 reveal-on-scroll">
+      <div class="p-6 sm:p-8 rounded-2xl bg-slate-50/90 border border-slate-200 reveal-on-scroll">
         <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
           
           <!-- Traditional Chaos -->
-          <div class="space-y-3 border-b md:border-b-0 md:border-r border-slate-800 pb-6 md:pb-0 md:pr-6">
-            <div class="flex items-center gap-2 text-rose-400 font-bold text-sm uppercase tracking-wider">
+          <div class="space-y-3 border-b md:border-b-0 md:border-r border-slate-200 pb-6 md:pb-0 md:pr-6">
+            <div class="flex items-center gap-2 text-rose-600 font-bold text-sm uppercase tracking-wider">
               <i data-lucide="x-circle" class="w-4 h-4"></i>
               <span>The Traditional Multi-Agency Dilemma</span>
             </div>
-            <ul class="space-y-2 text-xs sm:text-sm text-slate-400">
+            <ul class="space-y-2 text-xs sm:text-sm text-slate-500">
               <li class="flex items-start gap-2">
-                <span class="text-rose-400 font-bold">✕</span> Architect draws designs without assessing ground site practicalities.
+                <span class="text-rose-600 font-bold">✕</span> Architect draws designs without assessing ground site practicalities.
               </li>
               <li class="flex items-start gap-2">
-                <span class="text-rose-400 font-bold">✕</span> Contractor overcharges on extra items and pads measurement sheets.
+                <span class="text-rose-600 font-bold">✕</span> Contractor overcharges on extra items and pads measurement sheets.
               </li>
               <li class="flex items-start gap-2">
-                <span class="text-rose-400 font-bold">✕</span> Client is left stranded coordinating 10+ sub-vendors with endless delays.
+                <span class="text-rose-600 font-bold">✕</span> Client is left stranded coordinating 10+ sub-vendors with endless delays.
               </li>
             </ul>
           </div>
 
           <!-- BuildIQ Single Window -->
           <div class="space-y-3">
-            <div class="flex items-center gap-2 text-emerald-400 font-bold text-sm uppercase tracking-wider">
+            <div class="flex items-center gap-2 text-emerald-600 font-bold text-sm uppercase tracking-wider">
               <i data-lucide="check-circle-2" class="w-4 h-4"></i>
               <span>The BuildIQ Single-Window Standard</span>
             </div>
-            <ul class="space-y-2 text-xs sm:text-sm text-slate-300">
+            <ul class="space-y-2 text-xs sm:text-sm text-slate-600">
               <li class="flex items-start gap-2">
-                <span class="text-emerald-400 font-bold">✓</span> In-house GFC drawings aligned 100% with structural and MEP safety.
+                <span class="text-emerald-600 font-bold">✓</span> In-house GFC drawings aligned 100% with structural and MEP safety.
               </li>
               <li class="flex items-start gap-2">
-                <span class="text-emerald-400 font-bold">✓</span> On-site civil engineers verify every bar, cube, and running account bill.
+                <span class="text-emerald-600 font-bold">✓</span> On-site civil engineers verify every bar, cube, and running account bill.
               </li>
               <li class="flex items-start gap-2">
-                <span class="text-emerald-400 font-bold">✓</span> Absolute accountability with single point of project governance.
+                <span class="text-emerald-600 font-bold">✓</span> Absolute accountability with single point of project governance.
               </li>
             </ul>
           </div>
@@ -592,19 +1268,19 @@
   <!-- =========================================================================
        4. OUR CORE SERVICES
        ========================================================================= -->
-  <section id="services" class="py-20 lg:py-28 bg-brand-surface relative border-b border-slate-800">
+  <section id="services" class="py-20 lg:py-28 bg-slate-50 relative border-b border-slate-200">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       
       <!-- Section Header -->
       <div class="text-center max-w-3xl mx-auto mb-16 reveal-on-scroll">
-        <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-amber-500/10 border border-amber-500/30 text-amber-400 text-xs font-mono font-semibold uppercase tracking-wider mb-4">
+        <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-amber-500/10 border border-amber-500/30 text-amber-600 text-xs font-mono font-semibold uppercase tracking-wider mb-4">
           <i data-lucide="layers" class="w-3.5 h-3.5"></i>
           <span>Comprehensive Capabilities</span>
         </div>
-        <h2 class="text-3xl sm:text-4xl font-black text-white tracking-tight">
+        <h2 class="text-3xl sm:text-4xl font-black text-slate-900 tracking-tight">
           Our Core <span class="gold-gradient-text">Engineering Services</span>
         </h2>
-        <p class="text-slate-400 text-sm sm:text-base mt-3">
+        <p class="text-slate-500 text-sm sm:text-base mt-3">
           Four distinct engineering pillars delivering unmatched precision from planning and quality audits to turnkey execution and legal dispute resolution.
         </p>
       </div>
@@ -613,90 +1289,93 @@
       <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
         
         <!-- Service 1: PMC (Primary Core) -->
-        <div class="p-8 rounded-2xl bg-brand-dark border border-amber-500/40 shadow-xl hover:border-amber-400 transition-all group flex flex-col justify-between reveal-on-scroll relative overflow-hidden">
+        <div class="p-8 rounded-2xl bg-white border border-amber-500/40 shadow-xl hover:border-amber-400 transition-all group flex flex-col justify-between reveal-on-scroll relative overflow-hidden">
           <div class="absolute top-0 right-0 px-4 py-1.5 bg-amber-500 text-slate-950 font-black text-[10px] uppercase tracking-widest rounded-bl-xl">
             Primary Core Focus
           </div>
           <div class="space-y-5">
-            <div class="w-12 h-12 rounded-xl bg-amber-500/10 flex items-center justify-center text-amber-400 group-hover:scale-110 transition-transform">
+            <div class="w-12 h-12 rounded-xl bg-amber-500/10 flex items-center justify-center text-amber-600 group-hover:scale-110 transition-transform">
               <i data-lucide="clipboard-check" class="w-6 h-6"></i>
             </div>
             <div>
-              <h3 class="text-xl font-extrabold text-white">
+              <h3 class="text-xl font-extrabold text-slate-900">
                 Service 1: Project Management Consultancy (PMC)
               </h3>
-              <p class="text-xs font-mono text-amber-400 mt-1 uppercase tracking-wider">
+              <p class="text-xs font-mono text-amber-600 mt-1 uppercase tracking-wider">
                 Client-Side Quality, Budget & Schedule Governance
               </p>
             </div>
             
-            <ul class="space-y-3 text-xs sm:text-sm text-slate-300">
+            <ul class="space-y-3 text-xs sm:text-sm text-slate-600">
               <li class="flex items-start gap-2.5">
-                <i data-lucide="check" class="w-4 h-4 text-amber-400 flex-shrink-0 mt-0.5"></i>
+                <i data-lucide="check" class="w-4 h-4 text-amber-600 flex-shrink-0 mt-0.5"></i>
                 <span>Pre-construction BOQ preparation, accurate cost estimation, and contractor tendering.</span>
               </li>
               <li class="flex items-start gap-2.5">
-                <i data-lucide="check" class="w-4 h-4 text-amber-400 flex-shrink-0 mt-0.5"></i>
+                <i data-lucide="check" class="w-4 h-4 text-amber-600 flex-shrink-0 mt-0.5"></i>
                 <span>Daily on-site supervision, bar-bending schedule (BBS) verification, and material quality testing.</span>
               </li>
               <li class="flex items-start gap-2.5">
-                <i data-lucide="check" class="w-4 h-4 text-amber-400 flex-shrink-0 mt-0.5"></i>
+                <i data-lucide="check" class="w-4 h-4 text-amber-600 flex-shrink-0 mt-0.5"></i>
                 <span>Physical measurement sheet verification and Running Account (RA) bill auditing.</span>
               </li>
               <li class="flex items-start gap-2.5">
-                <i data-lucide="check" class="w-4 h-4 text-amber-400 flex-shrink-0 mt-0.5"></i>
+                <i data-lucide="check" class="w-4 h-4 text-amber-600 flex-shrink-0 mt-0.5"></i>
                 <span>Housing society redevelopment management and commercial fit-out PMC.</span>
               </li>
             </ul>
           </div>
 
-          <div class="pt-6 mt-6 border-t border-slate-800 flex items-center justify-between">
-            <span class="text-xs text-slate-400 font-mono">Scope: MMR & Pan-India</span>
-            <a href="#contact" class="text-xs font-bold text-amber-400 hover:text-amber-300 flex items-center gap-1">
+          <div class="pt-6 mt-6 border-t border-slate-200 flex items-center justify-between">
+            <span class="text-xs text-slate-500 font-mono">Scope: MMR & Pan-India</span>
+            <a href="#contact" class="text-xs font-bold text-amber-600 hover:text-amber-700 flex items-center gap-1">
               <span>Engage PMC</span>
               <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
             </a>
           </div>
         </div>
 
-        <!-- Service 2: Architecture & Full Turnkey (Lock & Key) -->
-        <div class="p-8 rounded-2xl bg-brand-dark border border-slate-800 hover:border-blue-500/40 transition-all group flex flex-col justify-between reveal-on-scroll relative">
+        <!-- Service 2: Turnkey Interior & Construction -->
+        <div class="p-8 rounded-2xl bg-white border border-slate-200 hover:border-blue-500/40 transition-all group flex flex-col justify-between reveal-on-scroll relative">
+           <div class="absolute top-0 right-0 px-4 py-1.5 bg-blue-500 text-white font-black text-[10px] uppercase tracking-widest rounded-bl-xl">
+            Turnkey Solutions
+          </div>
           <div class="space-y-5">
-            <div class="w-12 h-12 rounded-xl bg-blue-500/10 flex items-center justify-center text-blue-400 group-hover:scale-110 transition-transform">
+            <div class="w-12 h-12 rounded-xl bg-blue-500/10 flex items-center justify-center text-blue-600 group-hover:scale-110 transition-transform">
               <i data-lucide="hard-hat" class="w-6 h-6"></i>
             </div>
             <div>
-              <h3 class="text-xl font-extrabold text-white">
-                Service 2: Architecture & Full Turnkey Construction
+              <h3 class="text-xl font-extrabold text-slate-900">
+                Service 2: Turnkey Interior &  Construction
               </h3>
-              <p class="text-xs font-mono text-blue-400 mt-1 uppercase tracking-wider">
+              <p class="text-xs font-mono text-blue-600 mt-1 uppercase tracking-wider">
                 Lock & Key Civil Execution & Working Drawings
               </p>
             </div>
             
-            <ul class="space-y-3 text-xs sm:text-sm text-slate-300">
+            <ul class="space-y-3 text-xs sm:text-sm text-slate-600">
               <li class="flex items-start gap-2.5">
-                <i data-lucide="check" class="w-4 h-4 text-blue-400 flex-shrink-0 mt-0.5"></i>
+                <i data-lucide="check" class="w-4 h-4 text-blue-600 flex-shrink-0 mt-0.5"></i>
                 <span>Architectural floor layouts, 3D elevations, and Good For Construction (GFC) working drawings.</span>
               </li>
               <li class="flex items-start gap-2.5">
-                <i data-lucide="check" class="w-4 h-4 text-blue-400 flex-shrink-0 mt-0.5"></i>
+                <i data-lucide="check" class="w-4 h-4 text-blue-600 flex-shrink-0 mt-0.5"></i>
                 <span>Full building construction contracts from foundation to final finishing (Lock & Key basis).</span>
               </li>
               <li class="flex items-start gap-2.5">
-                <i data-lucide="check" class="w-4 h-4 text-blue-400 flex-shrink-0 mt-0.5"></i>
+                <i data-lucide="check" class="w-4 h-4 text-blue-600 flex-shrink-0 mt-0.5"></i>
                 <span>Structural stability safety reviews and comprehensive MEP Planning (Mechanical, Electrical, Plumbing, and Drainage design).</span>
               </li>
               <li class="flex items-start gap-2.5">
-                <i data-lucide="check" class="w-4 h-4 text-blue-400 flex-shrink-0 mt-0.5"></i>
+                <i data-lucide="check" class="w-4 h-4 text-blue-600 flex-shrink-0 mt-0.5"></i>
                 <span>Zero vendor mismatch with single architectural-civil engineering coordination.</span>
               </li>
             </ul>
           </div>
 
-          <div class="pt-6 mt-6 border-t border-slate-800 flex items-center justify-between">
-            <span class="text-xs text-slate-400 font-mono">Model: Turnkey Lock & Key</span>
-            <a href="#contact" class="text-xs font-bold text-blue-400 hover:text-blue-300 flex items-center gap-1">
+          <div class="pt-6 mt-6 border-t border-slate-200 flex items-center justify-between">
+            <span class="text-xs text-slate-500 font-mono">Model: Turnkey Lock & Key</span>
+            <a href="#contact" class="text-xs font-bold text-blue-600 hover:text-blue-700 flex items-center gap-1">
               <span>Book Turnkey Brief</span>
               <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
             </a>
@@ -704,43 +1383,46 @@
         </div>
 
         <!-- Service 3: Construction Arbitration & Contract Claims -->
-        <div class="p-8 rounded-2xl bg-brand-dark border border-slate-800 hover:border-amber-500/40 transition-all group flex flex-col justify-between reveal-on-scroll relative">
+        <div class="p-8 rounded-2xl bg-white border border-slate-200 hover:border-amber-500/40 transition-all group flex flex-col justify-between reveal-on-scroll relative">
+           <div class="absolute top-0 right-0 px-4 py-1.5 bg-violet-600 text-white font-black text-[10px] uppercase tracking-widest rounded-bl-xl">
+              Technical Expertise
+            </div>
           <div class="space-y-5">
-            <div class="w-12 h-12 rounded-xl bg-amber-500/10 flex items-center justify-center text-amber-400 group-hover:scale-110 transition-transform">
+            <div class="w-12 h-12 rounded-xl bg-amber-500/10 flex items-center justify-center text-amber-600 group-hover:scale-110 transition-transform">
               <i data-lucide="scale" class="w-6 h-6"></i>
             </div>
             <div>
-              <h3 class="text-xl font-extrabold text-white">
+              <h3 class="text-xl font-extrabold text-slate-900">
                 Service 3: Construction Arbitration & Contract Claims
               </h3>
-              <p class="text-xs font-mono text-amber-400 mt-1 uppercase tracking-wider">
+              <p class="text-xs font-mono text-amber-600 mt-1 uppercase tracking-wider">
                 Techno-Legal Assessment & Dispute Resolution
               </p>
             </div>
             
-            <ul class="space-y-3 text-xs sm:text-sm text-slate-300">
+            <ul class="space-y-3 text-xs sm:text-sm text-slate-600">
               <li class="flex items-start gap-2.5">
-                <i data-lucide="check" class="w-4 h-4 text-amber-400 flex-shrink-0 mt-0.5"></i>
+                <i data-lucide="check" class="w-4 h-4 text-amber-600 flex-shrink-0 mt-0.5"></i>
                 <span>Techno-legal assessment of project delays, scope variations, and contractual defaults.</span>
               </li>
               <li class="flex items-start gap-2.5">
-                <i data-lucide="check" class="w-4 h-4 text-amber-400 flex-shrink-0 mt-0.5"></i>
+                <i data-lucide="check" class="w-4 h-4 text-amber-600 flex-shrink-0 mt-0.5"></i>
                 <span>Drafting, claim structuring, and technical representation for arbitration proceedings.</span>
               </li>
               <li class="flex items-start gap-2.5">
-                <i data-lucide="check" class="w-4 h-4 text-amber-400 flex-shrink-0 mt-0.5"></i>
+                <i data-lucide="check" class="w-4 h-4 text-amber-600 flex-shrink-0 mt-0.5"></i>
                 <span>Proven Track Record: Successfully managed arbitration cases and secured awards for infrastructure contractors (including Western Railway projects for M/s Indian Construction).</span>
               </li>
               <li class="flex items-start gap-2.5">
-                <i data-lucide="check" class="w-4 h-4 text-amber-400 flex-shrink-0 mt-0.5"></i>
+                <i data-lucide="check" class="w-4 h-4 text-amber-600 flex-shrink-0 mt-0.5"></i>
                 <span>Delay analysis via CPM / Pert critical path forensic methodology.</span>
               </li>
             </ul>
           </div>
 
-          <div class="pt-6 mt-6 border-t border-slate-800 flex items-center justify-between">
-            <span class="text-xs text-slate-400 font-mono">Specialization: Infrastructure & Railways</span>
-            <a href="#contact" class="text-xs font-bold text-amber-400 hover:text-amber-300 flex items-center gap-1">
+          <div class="pt-6 mt-6 border-t border-slate-200 flex items-center justify-between">
+            <span class="text-xs text-slate-500 font-mono">Specialization: Infrastructure & Railways</span>
+            <a href="#contact" class="text-xs font-bold text-amber-600 hover:text-amber-700 flex items-center gap-1">
               <span>Arbitration Consultation</span>
               <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
             </a>
@@ -748,43 +1430,46 @@
         </div>
 
         <!-- Service 4: Public Sector & Institutional Infrastructure -->
-        <div class="p-8 rounded-2xl bg-brand-dark border border-slate-800 hover:border-emerald-500/40 transition-all group flex flex-col justify-between reveal-on-scroll relative">
+        <div class="p-8 rounded-2xl bg-white border border-slate-200 hover:border-emerald-500/40 transition-all group flex flex-col justify-between reveal-on-scroll relative">         
+          <div class="absolute top-0 right-0 px-4 py-1.5 bg-emerald-500 text-white font-black text-[10px] uppercase tracking-widest rounded-bl-xl">
+            Infrastructure Solutions
+          </div>
           <div class="space-y-5">
-            <div class="w-12 h-12 rounded-xl bg-emerald-500/10 flex items-center justify-center text-emerald-400 group-hover:scale-110 transition-transform">
+            <div class="w-12 h-12 rounded-xl bg-emerald-500/10 flex items-center justify-center text-emerald-600 group-hover:scale-110 transition-transform">
               <i data-lucide="landmark" class="w-6 h-6"></i>
             </div>
             <div>
-              <h3 class="text-xl font-extrabold text-white">
+              <h3 class="text-xl font-extrabold text-slate-900">
                 Service 4: Public Sector & Institutional Infrastructure
               </h3>
-              <p class="text-xs font-mono text-emerald-400 mt-1 uppercase tracking-wider">
+              <p class="text-xs font-mono text-emerald-600 mt-1 uppercase tracking-wider">
                 Government Norms & Rigorous Quality Standards
               </p>
             </div>
             
-            <ul class="space-y-3 text-xs sm:text-sm text-slate-300">
+            <ul class="space-y-3 text-xs sm:text-sm text-slate-600">
               <li class="flex items-start gap-2.5">
-                <i data-lucide="check" class="w-4 h-4 text-emerald-400 flex-shrink-0 mt-0.5"></i>
+                <i data-lucide="check" class="w-4 h-4 text-emerald-600 flex-shrink-0 mt-0.5"></i>
                 <span>Turnkey civil execution and PMC adhering to stringent public sector engineering standards.</span>
               </li>
               <li class="flex items-start gap-2.5">
-                <i data-lucide="check" class="w-4 h-4 text-emerald-400 flex-shrink-0 mt-0.5"></i>
+                <i data-lucide="check" class="w-4 h-4 text-emerald-600 flex-shrink-0 mt-0.5"></i>
                 <span>Full compliance with institutional building codes, safety norms, and government quality parameters.</span>
               </li>
               <li class="flex items-start gap-2.5">
-                <i data-lucide="check" class="w-4 h-4 text-emerald-400 flex-shrink-0 mt-0.5"></i>
+                <i data-lucide="check" class="w-4 h-4 text-emerald-600 flex-shrink-0 mt-0.5"></i>
                 <span>Extensive background with Western Railway (W. Rly), MES Defense, and MHADA guidelines.</span>
               </li>
               <li class="flex items-start gap-2.5">
-                <i data-lucide="check" class="w-4 h-4 text-emerald-400 flex-shrink-0 mt-0.5"></i>
+                <i data-lucide="check" class="w-4 h-4 text-emerald-600 flex-shrink-0 mt-0.5"></i>
                 <span>Robust documentation, safety checklists, and statutory clearance coordination.</span>
               </li>
             </ul>
           </div>
 
-          <div class="pt-6 mt-6 border-t border-slate-800 flex items-center justify-between">
-            <span class="text-xs text-slate-400 font-mono">Compliance: IS Codes & CPWD Norms</span>
-            <a href="#contact" class="text-xs font-bold text-emerald-400 hover:text-emerald-300 flex items-center gap-1">
+          <div class="pt-6 mt-6 border-t border-slate-200 flex items-center justify-between">
+            <span class="text-xs text-slate-500 font-mono">Compliance: IS Codes & CPWD Norms</span>
+            <a href="#contact" class="text-xs font-bold text-emerald-600 hover:text-emerald-700 flex items-center gap-1">
               <span>Institutional Inquiries</span>
               <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
             </a>
@@ -799,219 +1484,430 @@
   <!-- =========================================================================
        INTERACTIVE ENGINEERING & AUDIT DASHBOARD PREVIEW
        ========================================================================= -->
-  <section class="py-16 lg:py-24 bg-brand-surface/40 relative border-b border-slate-800">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      
-      <div class="text-center max-w-2xl mx-auto mb-10 reveal-on-scroll">
-        <span class="text-xs font-mono text-amber-400 uppercase tracking-widest">Engineering Control System</span>
-        <h3 class="text-2xl sm:text-3xl font-bold text-white mt-1">
-          Live Quality & Bill Audit Methodology
-        </h3>
-        <p class="text-xs sm:text-sm text-slate-400 mt-2">
-          Explore how BuildIQ monitors on-site parameters to ensure complete technical precision and cost control.
-        </p>
+<section class="py-16 lg:py-24 bg-white relative border-b border-slate-200">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+    <!-- Section Heading -->
+    <div class="text-center max-w-2xl mx-auto mb-10 reveal-on-scroll">
+      <span class="text-xs font-mono text-amber-600 uppercase tracking-widest">
+        Engineering Control System
+      </span>
+
+      <h3 class="text-2xl sm:text-3xl font-bold text-slate-900 mt-1">
+        Live Quality & Bill Audit Methodology
+      </h3>
+
+      <p class="text-xs sm:text-sm text-slate-500 mt-2">
+        Explore how BuildIQ monitors on-site parameters to ensure complete technical precision and cost control.
+      </p>
+    </div>
+
+
+    <!-- Interactive Dashboard -->
+    <div class="rounded-2xl bg-white border border-slate-200 overflow-hidden shadow-xl reveal-on-scroll">
+
+      <!-- Tab Navigation -->
+      <div class="flex flex-wrap border-b border-slate-200 bg-slate-50 p-2 gap-2">
+
+        <!-- Active Tab -->
+        <button
+          class="dashboard-tab-btn px-4 py-2.5 rounded-xl text-xs font-mono font-bold transition-all active bg-amber-500 text-slate-950"
+          data-tab="tab-bill-audit"
+        >
+          <span class="flex items-center gap-2">
+            <i data-lucide="file-spreadsheet" class="w-4 h-4"></i>
+            RA Bill & Measurement Auditing
+          </span>
+        </button>
+
+        <!-- Tab 2 -->
+        <button
+          class="dashboard-tab-btn px-4 py-2.5 rounded-xl text-xs font-mono font-medium text-slate-500 hover:text-slate-900 bg-white border border-slate-200 transition-all"
+          data-tab="tab-bbs"
+        >
+          <span class="flex items-center gap-2">
+            <i data-lucide="layers" class="w-4 h-4"></i>
+            BBS & Steel Reinforcement Log
+          </span>
+        </button>
+
+        <!-- Tab 3 -->
+        <button
+          class="dashboard-tab-btn px-4 py-2.5 rounded-xl text-xs font-mono font-medium text-slate-500 hover:text-slate-900 bg-white border border-slate-200 transition-all"
+          data-tab="tab-concrete"
+        >
+          <span class="flex items-center gap-2">
+            <i data-lucide="flask-conical" class="w-4 h-4"></i>
+            Cube Crushing & Material Testing
+          </span>
+        </button>
+
+        <!-- Tab 4 -->
+        <button
+          class="dashboard-tab-btn px-4 py-2.5 rounded-xl text-xs font-mono font-medium text-slate-500 hover:text-slate-900 bg-white border border-slate-200 transition-all"
+          data-tab="tab-arbitration"
+        >
+          <span class="flex items-center gap-2">
+            <i data-lucide="scale" class="w-4 h-4"></i>
+            Techno-Legal & Delay Claims
+          </span>
+        </button>
+
       </div>
 
-      <!-- Interactive Tabbed Card -->
-      <div class="glass-panel rounded-2xl border border-slate-800 overflow-hidden shadow-2xl reveal-on-scroll">
-        
-        <!-- Tab Navigation Buttons -->
-        <div class="flex flex-wrap border-b border-slate-800 bg-slate-950/60 p-2 gap-2">
-          <button class="dashboard-tab-btn px-4 py-2.5 rounded-xl text-xs font-mono font-bold transition-all active bg-amber-500 text-slate-950" data-tab="tab-bill-audit">
-            <span class="flex items-center gap-2">
-              <i data-lucide="file-spreadsheet" class="w-4 h-4"></i>
-              RA Bill & Measurement Auditing
-            </span>
-          </button>
-          <button class="dashboard-tab-btn px-4 py-2.5 rounded-xl text-xs font-mono font-medium text-slate-400 hover:text-white bg-slate-800/60 transition-all" data-tab="tab-bbs">
-            <span class="flex items-center gap-2">
-              <i data-lucide="layers" class="w-4 h-4"></i>
-              BBS & Steel Reinforcement Log
-            </span>
-          </button>
-          <button class="dashboard-tab-btn px-4 py-2.5 rounded-xl text-xs font-mono font-medium text-slate-400 hover:text-white bg-slate-800/60 transition-all" data-tab="tab-concrete">
-            <span class="flex items-center gap-2">
-              <i data-lucide="flask-conical" class="w-4 h-4"></i>
-              Cube Crushing & Material Testing
-            </span>
-          </button>
-          <button class="dashboard-tab-btn px-4 py-2.5 rounded-xl text-xs font-mono font-medium text-slate-400 hover:text-white bg-slate-800/60 transition-all" data-tab="tab-arbitration">
-            <span class="flex items-center gap-2">
-              <i data-lucide="scale" class="w-4 h-4"></i>
-              Techno-Legal & Delay Claims
-            </span>
-          </button>
-        </div>
 
-        <!-- Tab 1: RA Bill Auditing -->
-        <div id="tab-bill-audit" class="dashboard-tab-panel p-6 sm:p-8 space-y-6">
-          <div class="flex flex-col sm:flex-row justify-between sm:items-center gap-4 pb-4 border-b border-slate-800">
-            <div>
-              <h4 class="text-base font-bold text-white flex items-center gap-2">
-                <i data-lucide="shield-check" class="w-5 h-5 text-amber-400"></i>
-                Running Account (RA) Bill Verification Log
-              </h4>
-              <p class="text-xs text-slate-400">Physical on-site tape measurement vs. Contractor BOQ claim.</p>
-            </div>
-            <span class="px-3 py-1 rounded-full bg-emerald-950 border border-emerald-700 text-emerald-300 text-xs font-mono font-bold">
-              100% Billing Audited
-            </span>
-          </div>
+      <!-- ===================================================== -->
+      <!-- TAB 1: RA BILL AUDITING -->
+      <!-- ===================================================== -->
 
-          <div class="overflow-x-auto">
-            <table class="w-full text-left text-xs font-mono">
-              <thead class="text-slate-400 bg-slate-900/80 border-b border-slate-800">
-                <tr>
-                  <th class="p-3">Item Description</th>
-                  <th class="p-3">Contractor Claimed</th>
-                  <th class="p-3">BuildIQ Verified</th>
-                  <th class="p-3">Discrepancy / Saving</th>
-                  <th class="p-3">Status</th>
-                </tr>
-              </thead>
-              <tbody class="divide-y divide-slate-800/60 text-slate-300">
-                <tr>
-                  <td class="p-3 text-white font-sans font-medium">M25 Grade RCC Beam & Slab Pour (3rd Floor)</td>
-                  <td class="p-3">142.50 cu.m</td>
-                  <td class="p-3 text-emerald-400">134.20 cu.m</td>
-                  <td class="p-3 text-amber-400 font-bold">-8.30 cu.m (Saved ₹49,800)</td>
-                  <td class="p-3"><span class="px-2 py-0.5 rounded bg-emerald-900/50 text-emerald-300">Certified</span></td>
-                </tr>
-                <tr>
-                  <td class="p-3 text-white font-sans font-medium">Fe550D TMT Reinforcement Steel Placement</td>
-                  <td class="p-3">18.40 MT</td>
-                  <td class="p-3 text-emerald-400">17.15 MT</td>
-                  <td class="p-3 text-amber-400 font-bold">-1.25 MT (Saved ₹87,500)</td>
-                  <td class="p-3"><span class="px-2 py-0.5 rounded bg-emerald-900/50 text-emerald-300">Certified</span></td>
-                </tr>
-                <tr>
-                  <td class="p-3 text-white font-sans font-medium">AAC Block Masonry 150mm with Polymer Mortar</td>
-                  <td class="p-3">620.00 sq.m</td>
-                  <td class="p-3 text-emerald-400">598.40 sq.m</td>
-                  <td class="p-3 text-amber-400 font-bold">-21.60 sq.m (Saved ₹28,080)</td>
-                  <td class="p-3"><span class="px-2 py-0.5 rounded bg-emerald-900/50 text-emerald-300">Certified</span></td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
+      <div
+        id="tab-bill-audit"
+        class="dashboard-tab-panel p-6 sm:p-8 space-y-6"
+      >
 
-          <div class="p-4 rounded-xl bg-amber-950/30 border border-amber-800/50 flex items-center justify-between text-xs">
-            <span class="text-amber-200">
-              <strong>Total Client Savings This RA Cycle:</strong> ₹1,65,380 eliminated from unverified contractor billing.
-            </span>
-            <button class="open-report-modal-btn text-amber-400 hover:underline font-mono font-bold">
-              Download Audit Sample →
-            </button>
-          </div>
-        </div>
+        <div class="flex flex-col sm:flex-row justify-between sm:items-center gap-4 pb-4 border-b border-slate-200">
 
-        <!-- Tab 2: BBS & Steel Reinforcement Log -->
-        <div id="tab-bbs" class="dashboard-tab-panel p-6 sm:p-8 space-y-6 hidden">
-          <div class="flex justify-between items-center pb-4 border-b border-slate-800">
-            <div>
-              <h4 class="text-base font-bold text-white flex items-center gap-2">
-                <i data-lucide="layers" class="w-5 h-5 text-blue-400"></i>
-                Bar Bending Schedule (BBS) & Structural Integrity
-              </h4>
-              <p class="text-xs text-slate-400">Verification of lap lengths, stirrup hook angles (135°), and cover blocks.</p>
-            </div>
-          </div>
+          <div>
+            <h4 class="text-base font-bold text-slate-900 flex items-center gap-2">
+              <i data-lucide="shield-check" class="w-5 h-5 text-amber-600"></i>
+              Running Account (RA) Bill Verification Log
+            </h4>
 
-          <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 text-xs font-mono">
-            <div class="p-4 rounded-xl bg-slate-900/80 border border-slate-800">
-              <span class="text-slate-400">Cover Block Inspection</span>
-              <div class="text-lg font-bold text-emerald-400 mt-1">100% Compliant</div>
-              <p class="text-[11px] text-slate-500 mt-1">40mm column / 25mm beam spacer blocks installed.</p>
-            </div>
-            <div class="p-4 rounded-xl bg-slate-900/80 border border-slate-800">
-              <span class="text-slate-400">Lap Length & Staggering</span>
-              <div class="text-lg font-bold text-emerald-400 mt-1">50d Checked</div>
-              <p class="text-[11px] text-slate-500 mt-1">Staggered laps at zone of minimum bending moment.</p>
-            </div>
-            <div class="p-4 rounded-xl bg-slate-900/80 border border-slate-800">
-              <span class="text-slate-400">Stirrup Spacing</span>
-              <div class="text-lg font-bold text-emerald-400 mt-1">100mm c/c @ Ends</div>
-              <p class="text-[11px] text-slate-500 mt-1">135° seismic hook ties inspected prior to casting.</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Tab 3: Concrete Cube Testing -->
-        <div id="tab-concrete" class="dashboard-tab-panel p-6 sm:p-8 space-y-6 hidden">
-          <div class="flex justify-between items-center pb-4 border-b border-slate-800">
-            <div>
-              <h4 class="text-base font-bold text-white flex items-center gap-2">
-                <i data-lucide="flask-conical" class="w-5 h-5 text-emerald-400"></i>
-                7-Day & 28-Day Concrete Cube Crushing Matrix
-              </h4>
-              <p class="text-xs text-slate-400">NABL Accredited lab compressive strength records per IS 456 / IS 516.</p>
-            </div>
-          </div>
-
-          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 text-xs font-mono">
-            <div class="p-4 rounded-xl bg-slate-900/80 border border-slate-800">
-              <div class="flex justify-between">
-                <span class="text-slate-400">Batch C-104 (M25 Grade)</span>
-                <span class="text-emerald-400 font-bold">28-Day Passed</span>
-              </div>
-              <div class="text-2xl font-bold text-white mt-2">29.4 N/mm²</div>
-              <p class="text-[11px] text-slate-500 mt-1">Requirement: ≥ 25.0 N/mm² — Exceeded target by 17.6%.</p>
-            </div>
-            <div class="p-4 rounded-xl bg-slate-900/80 border border-slate-800">
-              <div class="flex justify-between">
-                <span class="text-slate-400">Batch C-105 (M30 Grade)</span>
-                <span class="text-amber-400 font-bold">7-Day Passed</span>
-              </div>
-              <div class="text-2xl font-bold text-white mt-2">22.8 N/mm²</div>
-              <p class="text-[11px] text-slate-500 mt-1">Requirement (7-Day): ≥ 20.0 N/mm² — On track for 28-day cure.</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Tab 4: Techno-Legal & Arbitration -->
-        <div id="tab-arbitration" class="dashboard-tab-panel p-6 sm:p-8 space-y-6 hidden">
-          <div class="flex justify-between items-center pb-4 border-b border-slate-800">
-            <div>
-              <h4 class="text-base font-bold text-white flex items-center gap-2">
-                <i data-lucide="scale" class="w-5 h-5 text-amber-400"></i>
-                Techno-Legal Delay Analysis & Arbitration Track Record
-              </h4>
-              <p class="text-xs text-slate-400">Contractual claim formulation and dispute defense for major infrastructure.</p>
-            </div>
-          </div>
-
-          <div class="p-5 rounded-xl bg-slate-900/90 border border-slate-800 space-y-3 text-xs leading-relaxed">
-            <div class="flex items-center gap-2 text-amber-400 font-bold text-sm">
-              <i data-lucide="award" class="w-4 h-4"></i>
-              Western Railway Infrastructure Arbitration Reference
-            </div>
-            <p class="text-slate-300">
-              Successfully formulated technical delay claims, hindrance registers, and variation assessments for infrastructure contractors (including Western Railway contracts for M/s Indian Construction). Secured favorable arbitration awards through meticulous contemporaneous site records.
+            <p class="text-xs text-slate-500">
+              Physical on-site tape measurement vs. Contractor BOQ claim.
             </p>
           </div>
+
+          <span class="px-3 py-1 rounded-full bg-emerald-50 border border-emerald-200 text-emerald-700 text-xs font-mono font-bold">
+            100% Billing Audited
+          </span>
+
+        </div>
+
+
+        <!-- Audit Table -->
+        <div class="overflow-x-auto">
+
+          <table class="w-full text-left text-xs font-mono">
+
+            <thead class="text-slate-500 bg-slate-50 border-b border-slate-200">
+              <tr>
+                <th class="p-3">Item Description</th>
+                <th class="p-3">Contractor Claimed</th>
+                <th class="p-3">BuildIQ Verified</th>
+                <th class="p-3">Discrepancy / Saving</th>
+                <th class="p-3">Status</th>
+              </tr>
+            </thead>
+
+            <tbody class="divide-y divide-slate-200 text-slate-600">
+
+              <tr>
+                <td class="p-3 text-slate-900 font-sans font-medium">
+                  M25 Grade RCC Beam & Slab Pour (3rd Floor)
+                </td>
+
+                <td class="p-3">142.50 cu.m</td>
+
+                <td class="p-3 text-emerald-600">
+                  134.20 cu.m
+                </td>
+
+                <td class="p-3 text-amber-600 font-bold">
+                  -8.30 cu.m (Saved ₹49,800)
+                </td>
+
+                <td class="p-3">
+                  <span class="px-2 py-0.5 rounded bg-emerald-50 text-emerald-700">
+                    Certified
+                  </span>
+                </td>
+              </tr>
+
+
+              <tr>
+                <td class="p-3 text-slate-900 font-sans font-medium">
+                  Fe550D TMT Reinforcement Steel Placement
+                </td>
+
+                <td class="p-3">18.40 MT</td>
+
+                <td class="p-3 text-emerald-600">
+                  17.15 MT
+                </td>
+
+                <td class="p-3 text-amber-600 font-bold">
+                  -1.25 MT (Saved ₹87,500)
+                </td>
+
+                <td class="p-3">
+                  <span class="px-2 py-0.5 rounded bg-emerald-50 text-emerald-700">
+                    Certified
+                  </span>
+                </td>
+              </tr>
+
+
+              <tr>
+                <td class="p-3 text-slate-900 font-sans font-medium">
+                  AAC Block Masonry 150mm with Polymer Mortar
+                </td>
+
+                <td class="p-3">620.00 sq.m</td>
+
+                <td class="p-3 text-emerald-600">
+                  598.40 sq.m
+                </td>
+
+                <td class="p-3 text-amber-600 font-bold">
+                  -21.60 sq.m (Saved ₹28,080)
+                </td>
+
+                <td class="p-3">
+                  <span class="px-2 py-0.5 rounded bg-emerald-50 text-emerald-700">
+                    Certified
+                  </span>
+                </td>
+              </tr>
+
+            </tbody>
+
+          </table>
+
+        </div>
+
+
+        <!-- Savings -->
+        <div class="p-4 rounded-xl bg-amber-50 border border-amber-200 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 text-xs">
+
+          <span class="text-amber-800">
+            <strong>Total Client Savings This RA Cycle:</strong>
+            ₹1,65,380 eliminated from unverified contractor billing.
+          </span>
+
+          <button class="open-report-modal-btn text-amber-600 hover:text-amber-700 hover:underline font-mono font-bold whitespace-nowrap">
+            Download Audit Sample →
+          </button>
+
+        </div>
+
+      </div>
+
+
+      <!-- ===================================================== -->
+      <!-- TAB 2: BBS & STEEL -->
+      <!-- ===================================================== -->
+
+      <div
+        id="tab-bbs"
+        class="dashboard-tab-panel p-6 sm:p-8 space-y-6 hidden"
+      >
+
+        <div class="flex justify-between items-center pb-4 border-b border-slate-200">
+
+          <div>
+            <h4 class="text-base font-bold text-slate-900 flex items-center gap-2">
+              <i data-lucide="layers" class="w-5 h-5 text-blue-600"></i>
+              Bar Bending Schedule (BBS) & Structural Integrity
+            </h4>
+
+            <p class="text-xs text-slate-500">
+              Verification of lap lengths, stirrup hook angles (135°), and cover blocks.
+            </p>
+          </div>
+
+        </div>
+
+
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 text-xs font-mono">
+
+          <div class="p-4 rounded-xl bg-slate-50 border border-slate-200">
+            <span class="text-slate-500">
+              Cover Block Inspection
+            </span>
+
+            <div class="text-lg font-bold text-emerald-600 mt-1">
+              100% Compliant
+            </div>
+
+            <p class="text-[11px] text-slate-500 mt-1">
+              40mm column / 25mm beam spacer blocks installed.
+            </p>
+          </div>
+
+
+          <div class="p-4 rounded-xl bg-slate-50 border border-slate-200">
+            <span class="text-slate-500">
+              Lap Length & Staggering
+            </span>
+
+            <div class="text-lg font-bold text-emerald-600 mt-1">
+              50d Checked
+            </div>
+
+            <p class="text-[11px] text-slate-500 mt-1">
+              Staggered laps at zone of minimum bending moment.
+            </p>
+          </div>
+
+
+          <div class="p-4 rounded-xl bg-slate-50 border border-slate-200">
+            <span class="text-slate-500">
+              Stirrup Spacing
+            </span>
+
+            <div class="text-lg font-bold text-emerald-600 mt-1">
+              100mm c/c @ Ends
+            </div>
+
+            <p class="text-[11px] text-slate-500 mt-1">
+              135° seismic hook ties inspected prior to casting.
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <!-- ===================================================== -->
+      <!-- TAB 3: CONCRETE TESTING -->
+      <!-- ===================================================== -->
+
+      <div
+        id="tab-concrete"
+        class="dashboard-tab-panel p-6 sm:p-8 space-y-6 hidden"
+      >
+
+        <div class="flex justify-between items-center pb-4 border-b border-slate-200">
+
+          <div>
+            <h4 class="text-base font-bold text-slate-900 flex items-center gap-2">
+              <i data-lucide="flask-conical" class="w-5 h-5 text-emerald-600"></i>
+              7-Day & 28-Day Concrete Cube Crushing Matrix
+            </h4>
+
+            <p class="text-xs text-slate-500">
+              NABL Accredited lab compressive strength records per IS 456 / IS 516.
+            </p>
+          </div>
+
+        </div>
+
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 text-xs font-mono">
+
+          <div class="p-4 rounded-xl bg-slate-50 border border-slate-200">
+
+            <div class="flex justify-between">
+              <span class="text-slate-500">
+                Batch C-104 (M25 Grade)
+              </span>
+
+              <span class="text-emerald-600 font-bold">
+                28-Day Passed
+              </span>
+            </div>
+
+            <div class="text-2xl font-bold text-slate-900 mt-2">
+              29.4 N/mm²
+            </div>
+
+            <p class="text-[11px] text-slate-500 mt-1">
+              Requirement: ≥ 25.0 N/mm² — Exceeded target by 17.6%.
+            </p>
+
+          </div>
+
+
+          <div class="p-4 rounded-xl bg-slate-50 border border-slate-200">
+
+            <div class="flex justify-between">
+              <span class="text-slate-500">
+                Batch C-105 (M30 Grade)
+              </span>
+
+              <span class="text-amber-600 font-bold">
+                7-Day Passed
+              </span>
+            </div>
+
+            <div class="text-2xl font-bold text-slate-900 mt-2">
+              22.8 N/mm²
+            </div>
+
+            <p class="text-[11px] text-slate-500 mt-1">
+              Requirement (7-Day): ≥ 20.0 N/mm² — On track for 28-day cure.
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <!-- ===================================================== -->
+      <!-- TAB 4: TECHNO-LEGAL -->
+      <!-- ===================================================== -->
+
+      <div
+        id="tab-arbitration"
+        class="dashboard-tab-panel p-6 sm:p-8 space-y-6 hidden"
+      >
+
+        <div class="flex justify-between items-center pb-4 border-b border-slate-200">
+
+          <div>
+            <h4 class="text-base font-bold text-slate-900 flex items-center gap-2">
+              <i data-lucide="scale" class="w-5 h-5 text-violet-600"></i>
+              Techno-Legal Delay Analysis & Arbitration Track Record
+            </h4>
+
+            <p class="text-xs text-slate-500">
+              Contractual claim formulation and dispute defense for major infrastructure.
+            </p>
+          </div>
+
+        </div>
+
+
+        <div class="p-5 rounded-xl bg-violet-50 border border-violet-200 space-y-3 text-xs leading-relaxed">
+
+          <div class="flex items-center gap-2 text-violet-600 font-bold text-sm">
+            <i data-lucide="award" class="w-4 h-4"></i>
+            Western Railway Infrastructure Arbitration Reference
+          </div>
+
+          <p class="text-slate-600">
+            Successfully formulated technical delay claims, hindrance registers, and variation assessments for infrastructure contractors (including Western Railway contracts for M/s Indian Construction). Secured favorable arbitration awards through meticulous contemporaneous site records.
+          </p>
+
         </div>
 
       </div>
 
     </div>
-  </section>
+
+  </div>
+</section>
 
   <!-- =========================================================================
        5. PORTFOLIO & PROJECT EXPERIENCE
        ========================================================================= -->
-  <section id="portfolio" class="py-20 lg:py-28 bg-brand-dark relative border-b border-slate-800">
+  <section id="portfolio" class="py-20 lg:py-28 bg-white relative border-b border-slate-200">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       
       <!-- Section Header -->
       <div class="text-center max-w-3xl mx-auto mb-12 reveal-on-scroll">
-        <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-amber-500/10 border border-amber-500/30 text-amber-400 text-xs font-mono font-semibold uppercase tracking-wider mb-4">
+        <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-amber-500/10 border border-amber-500/30 text-amber-600 text-xs font-mono font-semibold uppercase tracking-wider mb-4">
           <i data-lucide="briefcase" class="w-3.5 h-3.5"></i>
           <span>Execution Track Record</span>
         </div>
-        <h2 class="text-3xl sm:text-4xl font-black text-white tracking-tight">
+        <h2 class="text-3xl sm:text-4xl font-black text-slate-900 tracking-tight">
           Portfolio & <span class="gold-gradient-text">Project Experience</span>
         </h2>
-        <p class="text-slate-400 text-sm sm:text-base mt-3">
+        <p class="text-slate-500 text-sm sm:text-base mt-3">
           Spanning regional multi-story builds, defense & railway staff quarters, urban housing redevelopment, and commercial fit-outs.
         </p>
       </div>
@@ -1021,16 +1917,16 @@
         <button class="portfolio-filter-btn px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold transition-all active bg-amber-500 text-slate-950 font-bold shadow-md shadow-amber-500/20" data-filter="all">
           All Projects
         </button>
-        <button class="portfolio-filter-btn px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold text-slate-400 hover:text-white bg-slate-900 border border-slate-800 transition-all" data-filter="regional">
+        <button class="portfolio-filter-btn px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold text-slate-500 hover:text-slate-900 bg-slate-50 border border-slate-200 transition-all" data-filter="regional">
           Outstation & Regional
         </button>
-        <button class="portfolio-filter-btn px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold text-slate-400 hover:text-white bg-slate-900 border border-slate-800 transition-all" data-filter="railways-defense">
+        <button class="portfolio-filter-btn px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold text-slate-500 hover:text-slate-900 bg-slate-50 border border-slate-200 transition-all" data-filter="railways-defense">
           Railways & Defense (Lock & Key)
         </button>
-        <button class="portfolio-filter-btn px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold text-slate-400 hover:text-white bg-slate-900 border border-slate-800 transition-all" data-filter="urban-housing">
+        <button class="portfolio-filter-btn px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold text-slate-500 hover:text-slate-900 bg-slate-50 border border-slate-200 transition-all" data-filter="urban-housing">
           Urban Housing & Redevelopment
         </button>
-        <button class="portfolio-filter-btn px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold text-slate-400 hover:text-white bg-slate-900 border border-slate-800 transition-all" data-filter="commercial">
+        <button class="portfolio-filter-btn px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold text-slate-500 hover:text-slate-900 bg-slate-50 border border-slate-200 transition-all" data-filter="commercial">
           Private & Commercial
         </button>
       </div>
@@ -1039,7 +1935,7 @@
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7" id="portfolio-grid">
         
         <!-- Category 1: Outstation & Regional -->
-        <div class="project-card rounded-2xl bg-brand-surface border border-slate-800 overflow-hidden hover:border-amber-500/40 transition-all group flex flex-col justify-between" data-category="regional">
+        <div class="project-card rounded-2xl bg-slate-50 border border-slate-200 overflow-hidden hover:border-amber-500/40 transition-all group flex flex-col justify-between" data-category="regional">
           <div>
             <div class="relative h-56 overflow-hidden">
               <img src="assets/images/hero_pmc_architecture.jpg" alt="G+4 Multi-Story Development Sikar Rajasthan" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
@@ -1047,28 +1943,28 @@
               <div class="absolute top-3 left-3 px-3 py-1 bg-amber-500 text-slate-950 font-bold text-[10px] uppercase tracking-wider rounded-lg">
                 Outstation & Regional
               </div>
-              <div class="absolute top-3 right-3 px-2.5 py-1 bg-slate-950/80 backdrop-blur-md text-emerald-400 font-mono text-[10px] font-bold rounded-lg border border-emerald-800/60">
+              <div class="absolute top-3 right-3 px-2.5 py-1 bg-white/80 backdrop-blur-md text-emerald-600 font-mono text-[10px] font-bold rounded-lg border border-emerald-800/60">
                 95% Completed
               </div>
             </div>
             <div class="p-6 space-y-3">
-              <span class="text-xs font-mono text-amber-400">Sikar, Rajasthan</span>
-              <h3 class="text-lg font-bold text-white group-hover:text-amber-300 transition-colors">
+              <span class="text-xs font-mono text-amber-600">Sikar, Rajasthan</span>
+              <h3 class="text-lg font-bold text-slate-900 group-hover:text-amber-700 transition-colors">
                 G+4 Multi-Story Development
               </h3>
-              <p class="text-xs text-slate-300 leading-relaxed">
+              <p class="text-xs text-slate-600 leading-relaxed">
                 Complete Architectural Design & Turnkey PMC. End-to-end site governance, structural BBS auditing, and contractor RA bill certification.
               </p>
             </div>
           </div>
-          <div class="px-6 pb-6 pt-2 border-t border-slate-800/80 flex items-center justify-between text-xs font-mono text-slate-400">
+          <div class="px-6 pb-6 pt-2 border-t border-slate-200/80 flex items-center justify-between text-xs font-mono text-slate-500">
             <span>Scope: Architecture + PMC</span>
-            <span class="text-amber-400">Turnkey Model</span>
+            <span class="text-amber-600">Turnkey Model</span>
           </div>
         </div>
 
         <!-- Category 2: Western Railway Staff Quarters -->
-        <div class="project-card rounded-2xl bg-brand-surface border border-slate-800 overflow-hidden hover:border-blue-500/40 transition-all group flex flex-col justify-between" data-category="railways-defense">
+        <div class="project-card rounded-2xl bg-slate-50 border border-slate-200 overflow-hidden hover:border-blue-500/40 transition-all group flex flex-col justify-between" data-category="railways-defense">
           <div>
             <div class="relative h-56 overflow-hidden">
               <img src="assets/images/hero_pmc_site.jpg" alt="Western Railway Multi-Story Staff Quarters" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
@@ -1076,28 +1972,28 @@
               <div class="absolute top-3 left-3 px-3 py-1 bg-blue-600 text-white font-bold text-[10px] uppercase tracking-wider rounded-lg">
                 Railways & Defense (Lock & Key)
               </div>
-              <div class="absolute top-3 right-3 px-2.5 py-1 bg-slate-950/80 backdrop-blur-md text-slate-300 font-mono text-[10px] rounded-lg border border-slate-700">
+              <div class="absolute top-3 right-3 px-2.5 py-1 bg-white/80 backdrop-blur-md text-slate-600 font-mono text-[10px] rounded-lg border border-slate-300">
                 Turnkey Execution
               </div>
             </div>
             <div class="p-6 space-y-3">
-              <span class="text-xs font-mono text-blue-400">Western Railway (W. Rly)</span>
-              <h3 class="text-lg font-bold text-white group-hover:text-blue-300 transition-colors">
+              <span class="text-xs font-mono text-blue-600">Western Railway (W. Rly)</span>
+              <h3 class="text-lg font-bold text-slate-900 group-hover:text-blue-700 transition-colors">
                 Multi-Story Railway Staff Quarters
               </h3>
-              <p class="text-xs text-slate-300 leading-relaxed">
+              <p class="text-xs text-slate-600 leading-relaxed">
                 Complete RCC structural building and civil execution on Turnkey Lock & Key basis. High-grade materials adhering to strict Indian Railway engineering codes.
               </p>
             </div>
           </div>
-          <div class="px-6 pb-6 pt-2 border-t border-slate-800/80 flex items-center justify-between text-xs font-mono text-slate-400">
+          <div class="px-6 pb-6 pt-2 border-t border-slate-200/80 flex items-center justify-between text-xs font-mono text-slate-500">
             <span>Scope: RCC + Civil Turnkey</span>
-            <span class="text-blue-400">Lock & Key</span>
+            <span class="text-blue-600">Lock & Key</span>
           </div>
         </div>
 
         <!-- Category 2: MES Defense Staff Quarters -->
-        <div class="project-card rounded-2xl bg-brand-surface border border-slate-800 overflow-hidden hover:border-emerald-500/40 transition-all group flex flex-col justify-between" data-category="railways-defense">
+        <div class="project-card rounded-2xl bg-slate-50 border border-slate-200 overflow-hidden hover:border-emerald-500/40 transition-all group flex flex-col justify-between" data-category="railways-defense">
           <div>
             <div class="relative h-56 overflow-hidden">
               <img src="assets/images/quality_inspection_site.jpg" alt="Military Engineer Services Institutional & Defense Staff Quarters" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
@@ -1105,28 +2001,28 @@
               <div class="absolute top-3 left-3 px-3 py-1 bg-emerald-600 text-white font-bold text-[10px] uppercase tracking-wider rounded-lg">
                 Railways & Defense (Lock & Key)
               </div>
-              <div class="absolute top-3 right-3 px-2.5 py-1 bg-slate-950/80 backdrop-blur-md text-emerald-400 font-mono text-[10px] rounded-lg border border-emerald-800/60">
+              <div class="absolute top-3 right-3 px-2.5 py-1 bg-white/80 backdrop-blur-md text-emerald-600 font-mono text-[10px] rounded-lg border border-emerald-800/60">
                 MES Compliant
               </div>
             </div>
             <div class="p-6 space-y-3">
-              <span class="text-xs font-mono text-emerald-400">Military Engineer Services (MES)</span>
-              <h3 class="text-lg font-bold text-white group-hover:text-emerald-300 transition-colors">
+              <span class="text-xs font-mono text-emerald-600">Military Engineer Services (MES)</span>
+              <h3 class="text-lg font-bold text-slate-900 group-hover:text-emerald-700 transition-colors">
                 Institutional & Defense Staff Quarters
               </h3>
-              <p class="text-xs text-slate-300 leading-relaxed">
+              <p class="text-xs text-slate-600 leading-relaxed">
                 Complete civil construction, structural work, and interior finishing on Lock & Key basis under defense-grade engineering standards and protocols.
               </p>
             </div>
           </div>
-          <div class="px-6 pb-6 pt-2 border-t border-slate-800/80 flex items-center justify-between text-xs font-mono text-slate-400">
+          <div class="px-6 pb-6 pt-2 border-t border-slate-200/80 flex items-center justify-between text-xs font-mono text-slate-500">
             <span>Scope: Civil + Interior Finishing</span>
-            <span class="text-emerald-400">Lock & Key</span>
+            <span class="text-emerald-600">Lock & Key</span>
           </div>
         </div>
 
         <!-- Category 3: MHADA Urban Housing & Redevelopment -->
-        <div class="project-card rounded-2xl bg-brand-surface border border-slate-800 overflow-hidden hover:border-amber-500/40 transition-all group flex flex-col justify-between" data-category="urban-housing">
+        <div class="project-card rounded-2xl bg-slate-50 border border-slate-200 overflow-hidden hover:border-amber-500/40 transition-all group flex flex-col justify-between" data-category="urban-housing">
           <div>
             <div class="relative h-56 overflow-hidden">
               <img src="assets/images/drawing_review_site.jpg" alt="MHADA Urban Housing Redevelopment" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
@@ -1134,28 +2030,28 @@
               <div class="absolute top-3 left-3 px-3 py-1 bg-amber-600 text-white font-bold text-[10px] uppercase tracking-wider rounded-lg">
                 Urban Housing & Redevelopment
               </div>
-              <div class="absolute top-3 right-3 px-2.5 py-1 bg-slate-950/80 backdrop-blur-md text-amber-300 font-mono text-[10px] rounded-lg border border-amber-800/60">
+              <div class="absolute top-3 right-3 px-2.5 py-1 bg-white/80 backdrop-blur-md text-amber-700 font-mono text-[10px] rounded-lg border border-amber-800/60">
                 Mumbai Metro
               </div>
             </div>
             <div class="p-6 space-y-3">
-              <span class="text-xs font-mono text-amber-400">MHADA Projects (Mumbai)</span>
-              <h3 class="text-lg font-bold text-white group-hover:text-amber-300 transition-colors">
+              <span class="text-xs font-mono text-amber-600">MHADA Projects (Mumbai)</span>
+              <h3 class="text-lg font-bold text-slate-900 group-hover:text-amber-700 transition-colors">
                 Housing Redevelopment & Quality Audits
               </h3>
-              <p class="text-xs text-slate-300 leading-relaxed">
+              <p class="text-xs text-slate-600 leading-relaxed">
                 Urban housing redevelopment supervision, structural repairs, contractor coordination, and comprehensive quality compliance audits across MMR.
               </p>
             </div>
           </div>
-          <div class="px-6 pb-6 pt-2 border-t border-slate-800/80 flex items-center justify-between text-xs font-mono text-slate-400">
+          <div class="px-6 pb-6 pt-2 border-t border-slate-200/80 flex items-center justify-between text-xs font-mono text-slate-500">
             <span>Scope: Structural PMC & Audits</span>
-            <span class="text-amber-400">Govt Norms</span>
+            <span class="text-amber-600">Govt Norms</span>
           </div>
         </div>
 
         <!-- Category 4: Commercial Fit-outs -->
-        <div class="project-card rounded-2xl bg-brand-surface border border-slate-800 overflow-hidden hover:border-cyan-500/40 transition-all group flex flex-col justify-between" data-category="commercial">
+        <div class="project-card rounded-2xl bg-slate-50 border border-slate-200 overflow-hidden hover:border-cyan-500/40 transition-all group flex flex-col justify-between" data-category="commercial">
           <div>
             <div class="relative h-56 overflow-hidden">
               <img src="assets/images/bkc_fitout.jpg" alt="Corporate Offices & Commercial Fit-outs" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
@@ -1163,28 +2059,28 @@
               <div class="absolute top-3 left-3 px-3 py-1 bg-cyan-600 text-white font-bold text-[10px] uppercase tracking-wider rounded-lg">
                 Private & Commercial
               </div>
-              <div class="absolute top-3 right-3 px-2.5 py-1 bg-slate-950/80 backdrop-blur-md text-cyan-300 font-mono text-[10px] rounded-lg border border-cyan-800/60">
+              <div class="absolute top-3 right-3 px-2.5 py-1 bg-white/80 backdrop-blur-md text-cyan-700 font-mono text-[10px] rounded-lg border border-cyan-800/60">
                 Corporate Fit-out
               </div>
             </div>
             <div class="p-6 space-y-3">
-              <span class="text-xs font-mono text-cyan-400">Commercial & Corporate</span>
-              <h3 class="text-lg font-bold text-white group-hover:text-cyan-300 transition-colors">
+              <span class="text-xs font-mono text-cyan-600">Commercial & Corporate</span>
+              <h3 class="text-lg font-bold text-slate-900 group-hover:text-cyan-700 transition-colors">
                 Corporate Offices & Executive Fit-Outs
               </h3>
-              <p class="text-xs text-slate-300 leading-relaxed">
+              <p class="text-xs text-slate-600 leading-relaxed">
                 High-spec office interiors, MEP integration, HVAC balancing, fire safety compliance, and turnkey executive floor delivery.
               </p>
             </div>
           </div>
-          <div class="px-6 pb-6 pt-2 border-t border-slate-800/80 flex items-center justify-between text-xs font-mono text-slate-400">
+          <div class="px-6 pb-6 pt-2 border-t border-slate-200/80 flex items-center justify-between text-xs font-mono text-slate-500">
             <span>Scope: MEP + Turnkey Fit-out</span>
-            <span class="text-cyan-400">Commercial PMC</span>
+            <span class="text-cyan-600">Commercial PMC</span>
           </div>
         </div>
 
         <!-- Category 4: Private Residential Structures -->
-        <div class="project-card rounded-2xl bg-brand-surface border border-slate-800 overflow-hidden hover:border-yellow-500/40 transition-all group flex flex-col justify-between" data-category="commercial">
+        <div class="project-card rounded-2xl bg-slate-50 border border-slate-200 overflow-hidden hover:border-yellow-500/40 transition-all group flex flex-col justify-between" data-category="commercial">
           <div>
             <div class="relative h-56 overflow-hidden">
               <img src="assets/images/bandra_villa.jpg" alt="Private Residential Structures & Villas" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
@@ -1192,23 +2088,23 @@
               <div class="absolute top-3 left-3 px-3 py-1 bg-yellow-600 text-slate-950 font-bold text-[10px] uppercase tracking-wider rounded-lg">
                 Private & Commercial
               </div>
-              <div class="absolute top-3 right-3 px-2.5 py-1 bg-slate-950/80 backdrop-blur-md text-yellow-300 font-mono text-[10px] rounded-lg border border-yellow-800/60">
+              <div class="absolute top-3 right-3 px-2.5 py-1 bg-white/80 backdrop-blur-md text-yellow-700 font-mono text-[10px] rounded-lg border border-yellow-800/60">
                 Luxury Private
               </div>
             </div>
             <div class="p-6 space-y-3">
-              <span class="text-xs font-mono text-yellow-400">Private Residential</span>
-              <h3 class="text-lg font-bold text-white group-hover:text-yellow-300 transition-colors">
+              <span class="text-xs font-mono text-yellow-600">Private Residential</span>
+              <h3 class="text-lg font-bold text-slate-900 group-hover:text-yellow-700 transition-colors">
                 Private Residential Structures & Villas
               </h3>
-              <p class="text-xs text-slate-300 leading-relaxed">
+              <p class="text-xs text-slate-600 leading-relaxed">
                 Bespoke civil architecture, structural stability reviews, high-end finishing, and turnkey handover for private residential developments.
               </p>
             </div>
           </div>
-          <div class="px-6 pb-6 pt-2 border-t border-slate-800/80 flex items-center justify-between text-xs font-mono text-slate-400">
+          <div class="px-6 pb-6 pt-2 border-t border-slate-200/80 flex items-center justify-between text-xs font-mono text-slate-500">
             <span>Scope: Architecture + Turnkey Civil</span>
-            <span class="text-yellow-400">Lock & Key</span>
+            <span class="text-yellow-600">Lock & Key</span>
           </div>
         </div>
 
@@ -1220,48 +2116,47 @@
   <!-- =========================================================================
        6. ABOUT THE FOUNDER
        ========================================================================= -->
-  <section id="about-founder" class="py-20 lg:py-28 bg-brand-surface relative border-b border-slate-800">
+  <section id="about-founder" class="py-20 lg:py-28 bg-slate-50 relative border-b border-slate-200">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       
       <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
         
         <!-- Left: Founder Persona / Credential Spotlight -->
         <div class="lg:col-span-5 reveal-on-scroll">
-          <div class="relative rounded-2xl glass-panel-gold p-8 border border-amber-500/40 shadow-2xl space-y-6">
-            
+          <div class="relative rounded-2xl bg-white p-8 border border-amber-500/40 shadow-xl space-y-6">            
             <div class="flex items-center gap-4">
               <div class="w-16 h-16 rounded-2xl bg-gradient-to-br from-amber-400 via-amber-500 to-yellow-600 flex items-center justify-center text-slate-950 font-black shadow-lg shadow-amber-500/30">
                 <i data-lucide="award" class="w-9 h-9 text-slate-950"></i>
               </div>
               <div>
-                <span class="text-xs font-mono text-amber-400 uppercase tracking-widest font-semibold">Founder & Technical Director</span>
-                <h3 class="text-xl font-black text-white">B.Tech Civil Engineer</h3>
-                <p class="text-xs text-slate-400 font-mono">20+ Years Ground-Level Execution</p>
+                <span class="text-xs font-mono text-amber-600 uppercase tracking-widest font-semibold">Founder & Technical Director</span>
+                <h3 class="text-xl font-black text-slate-900">B.Tech Civil Engineer</h3>
+                <p class="text-xs text-slate-500 font-mono">20+ Years Ground-Level Execution</p>
               </div>
             </div>
 
             <!-- Credentials Grid -->
             <div class="grid grid-cols-2 gap-3 pt-2">
-              <div class="p-3 rounded-xl bg-slate-950/80 border border-slate-800">
-                <div class="text-[10px] text-slate-400 font-mono uppercase">Engineering Degree</div>
-                <div class="text-sm font-bold text-white mt-0.5">B.Tech Civil</div>
+              <div class="p-3 rounded-xl bg-white/80 border border-slate-200">
+                <div class="text-[10px] text-slate-500 font-mono uppercase">Engineering Degree</div>
+                <div class="text-sm font-bold text-slate-900 mt-0.5">D.C.E , B.Tech Civil</div>
               </div>
-              <div class="p-3 rounded-xl bg-slate-950/80 border border-slate-800">
-                <div class="text-[10px] text-slate-400 font-mono uppercase">Site Experience</div>
-                <div class="text-sm font-bold text-amber-400 mt-0.5">20+ Years</div>
+              <div class="p-3 rounded-xl bg-white/80 border border-slate-200">
+                <div class="text-[10px] text-slate-500 font-mono uppercase">Site Experience</div>
+                <div class="text-sm font-bold text-amber-600 mt-0.5">20+ Years</div>
               </div>
-              <div class="p-3 rounded-xl bg-slate-950/80 border border-slate-800">
-                <div class="text-[10px] text-slate-400 font-mono uppercase">Institutional Track</div>
-                <div class="text-sm font-bold text-white mt-0.5">W. Rly / MES / MHADA</div>
+              <div class="p-3 rounded-xl bg-white/80 border border-slate-200">
+                <div class="text-[10px] text-slate-500 font-mono uppercase">Institutional Track</div>
+                <div class="text-sm font-bold text-slate-900 mt-0.5">W. Rly / MES / MHADA</div>
               </div>
-              <div class="p-3 rounded-xl bg-slate-950/80 border border-slate-800">
-                <div class="text-[10px] text-slate-400 font-mono uppercase">Dispute Resolution</div>
-                <div class="text-sm font-bold text-emerald-400 mt-0.5">Arbitration Claims</div>
+              <div class="p-3 rounded-xl bg-white/80 border border-slate-200">
+                <div class="text-[10px] text-slate-500 font-mono uppercase">Dispute Resolution</div>
+                <div class="text-sm font-bold text-emerald-600 mt-0.5">Arbitration Claims</div>
               </div>
             </div>
 
             <!-- Quote badge -->
-            <div class="p-4 rounded-xl bg-amber-950/40 border border-amber-800/50 text-xs text-amber-200/90 italic font-body">
+            <div class="p-4 rounded-xl bg-amber-50 border border-amber-800/50 text-xs text-amber-800/90 italic font-body">
               "Construction projects achieve real success only when backed by technical integrity, structural clarity, and hands-on site experience."
             </div>
 
@@ -1271,16 +2166,16 @@
         <!-- Right: Exact Body Text & Narrative -->
         <div class="lg:col-span-7 space-y-6 reveal-on-scroll">
           
-          <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-amber-500/10 border border-amber-500/30 text-amber-400 text-xs font-mono font-semibold uppercase tracking-wider">
+          <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-amber-500/10 border border-amber-500/30 text-amber-600 text-xs font-mono font-semibold uppercase tracking-wider">
             <i data-lucide="user-check" class="w-3.5 h-3.5"></i>
             <span>Leadership & Engineering Heritage</span>
           </div>
 
-          <h2 class="text-2xl sm:text-3xl lg:text-4xl font-black text-white tracking-tight leading-tight">
+          <h2 class="text-2xl sm:text-3xl lg:text-4xl font-black text-slate-900 tracking-tight leading-tight">
             Built on <span class="gold-gradient-text">20+ Years</span> of Ground-Level Civil Engineering
           </h2>
 
-          <div class="space-y-4 text-slate-300 text-sm sm:text-base leading-relaxed font-body">
+          <div class="space-y-4 text-slate-600 text-sm sm:text-base leading-relaxed font-body">
             <p>
               BuildIQ Projects was established on an uncompromising standard: construction projects achieve real success only when backed by technical integrity, structural clarity, and hands-on site experience.
             </p>
@@ -1294,20 +2189,20 @@
 
           <!-- Bulleted Value Drivers -->
           <div class="grid grid-cols-1 sm:grid-cols-2 gap-3.5 pt-2">
-            <div class="flex items-center gap-2.5 text-xs sm:text-sm text-slate-200">
-              <i data-lucide="check-circle" class="w-4 h-4 text-amber-400 flex-shrink-0"></i>
+            <div class="flex items-center gap-2.5 text-xs sm:text-sm text-slate-700">
+              <i data-lucide="check-circle" class="w-4 h-4 text-amber-600 flex-shrink-0"></i>
               <span>Zero tolerance for contractor bill inflating</span>
             </div>
-            <div class="flex items-center gap-2.5 text-xs sm:text-sm text-slate-200">
-              <i data-lucide="check-circle" class="w-4 h-4 text-amber-400 flex-shrink-0"></i>
+            <div class="flex items-center gap-2.5 text-xs sm:text-sm text-slate-700">
+              <i data-lucide="check-circle" class="w-4 h-4 text-amber-600 flex-shrink-0"></i>
               <span>Full compliance with IS & CPWD codes</span>
             </div>
-            <div class="flex items-center gap-2.5 text-xs sm:text-sm text-slate-200">
-              <i data-lucide="check-circle" class="w-4 h-4 text-amber-400 flex-shrink-0"></i>
+            <div class="flex items-center gap-2.5 text-xs sm:text-sm text-slate-700">
+              <i data-lucide="check-circle" class="w-4 h-4 text-amber-600 flex-shrink-0"></i>
               <span>Direct engineer site supervision daily</span>
             </div>
-            <div class="flex items-center gap-2.5 text-xs sm:text-sm text-slate-200">
-              <i data-lucide="check-circle" class="w-4 h-4 text-amber-400 flex-shrink-0"></i>
+            <div class="flex items-center gap-2.5 text-xs sm:text-sm text-slate-700">
+              <i data-lucide="check-circle" class="w-4 h-4 text-amber-600 flex-shrink-0"></i>
               <span>Proven techno-legal arbitration claims</span>
             </div>
           </div>
@@ -1329,19 +2224,19 @@
   <!-- =========================================================================
        7. CONTACT & OFFICE LOCATION
        ========================================================================= -->
-  <section id="contact" class="py-20 lg:py-28 bg-brand-dark relative border-b border-slate-800">
+  <section id="contact" class="py-20 lg:py-28 bg-white relative border-b border-slate-200">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       
       <!-- Section Header -->
       <div class="text-center max-w-3xl mx-auto mb-14 reveal-on-scroll">
-        <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-amber-500/10 border border-amber-500/30 text-amber-400 text-xs font-mono font-semibold uppercase tracking-wider mb-4">
+        <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-amber-500/10 border border-amber-500/30 text-amber-600 text-xs font-mono font-semibold uppercase tracking-wider mb-4">
           <i data-lucide="map-pin" class="w-3.5 h-3.5"></i>
           <span>Head Office & Consultation</span>
         </div>
-        <h2 class="text-3xl sm:text-4xl font-black text-white tracking-tight">
+        <h2 class="text-3xl sm:text-4xl font-black text-slate-900 tracking-tight">
           Get in Touch with <span class="gold-gradient-text">BuildIQ Projects</span>
         </h2>
-        <p class="text-slate-400 text-sm sm:text-base mt-3">
+        <p class="text-slate-500 text-sm sm:text-base mt-3">
           Book an independent engineering consultation, request a project management proposal, or discuss turnkey construction anywhere across India.
         </p>
       </div>
@@ -1352,19 +2247,19 @@
         <div class="lg:col-span-5 space-y-6 reveal-on-scroll">
           
           <!-- Head Office Address Card -->
-          <div class="p-6 rounded-2xl bg-brand-surface border border-amber-500/30 shadow-xl space-y-4">
+          <div class="p-6 rounded-2xl bg-slate-50 border border-amber-500/30 shadow-xl space-y-4">
             <div class="flex items-center gap-3">
-              <div class="w-10 h-10 rounded-xl bg-amber-500/10 flex items-center justify-center text-amber-400">
+              <div class="w-10 h-10 rounded-xl bg-amber-500/10 flex items-center justify-center text-amber-600">
                 <i data-lucide="building" class="w-5 h-5"></i>
               </div>
               <div>
-                <span class="text-[10px] font-mono uppercase tracking-widest text-amber-400 font-bold">Head Office</span>
-                <h3 class="text-lg font-black text-white">BuildIQ Projects</h3>
+                <span class="text-[10px] font-mono uppercase tracking-widest text-amber-600 font-bold">Head Office</span>
+                <h3 class="text-lg font-black text-slate-900">BuildIQ Projects</h3>
               </div>
             </div>
 
-            <div class="text-xs sm:text-sm text-slate-300 leading-relaxed flex items-start gap-2.5">
-              <i data-lucide="map-pin" class="w-4 h-4 text-amber-400 flex-shrink-0 mt-1"></i>
+            <div class="text-xs sm:text-sm text-slate-600 leading-relaxed flex items-start gap-2.5">
+              <i data-lucide="map-pin" class="w-4 h-4 text-amber-600 flex-shrink-0 mt-1"></i>
               <span>
                 <strong>B-504, Minar Tower, S. V. Road,</strong><br>
                 Near JVLR Flyover, Jogeshwari West,<br>
@@ -1372,26 +2267,26 @@
               </span>
             </div>
 
-            <div class="pt-3 border-t border-slate-800 space-y-2.5 text-xs sm:text-sm">
-              <a href="mailto:contact@buildiqprojects.com" class="flex items-center gap-2.5 text-slate-300 hover:text-amber-400 transition-colors">
-                <i data-lucide="mail" class="w-4 h-4 text-amber-400"></i>
+            <div class="pt-3 border-t border-slate-200 space-y-2.5 text-xs sm:text-sm">
+              <a href="mailto:contact@buildiqprojects.com" class="flex items-center gap-2.5 text-slate-600 hover:text-amber-600 transition-colors">
+                <i data-lucide="mail" class="w-4 h-4 text-amber-600"></i>
                 <span class="font-mono">contact@buildiqprojects.com</span>
               </a>
-              <a href="tel:+919820012345" class="flex items-center gap-2.5 text-slate-300 hover:text-amber-400 transition-colors">
-                <i data-lucide="phone" class="w-4 h-4 text-amber-400"></i>
+              <a href="tel:+919820012345" class="flex items-center gap-2.5 text-slate-600 hover:text-amber-600 transition-colors">
+                <i data-lucide="phone" class="w-4 h-4 text-amber-600"></i>
                 <span class="font-mono">+91 98200 12345 / WhatsApp Available</span>
               </a>
             </div>
           </div>
 
           <!-- Direct WhatsApp Quick Connect Banner -->
-          <div class="p-5 rounded-2xl bg-emerald-950/40 border border-emerald-700/50 flex items-center justify-between gap-4">
+          <div class="p-5 rounded-2xl bg-emerald-50 border border-emerald-700/50 flex items-center justify-between gap-4">
             <div class="space-y-1">
-              <div class="text-xs font-bold text-white flex items-center gap-1.5">
-                <i data-lucide="message-circle" class="w-4 h-4 text-emerald-400"></i>
+              <div class="text-xs font-bold text-slate-900 flex items-center gap-1.5">
+                <i data-lucide="message-circle" class="w-4 h-4 text-emerald-600"></i>
                 Instant WhatsApp Desk
               </div>
-              <p class="text-[11px] text-slate-300">Fastest route for drawing reviews and site visits.</p>
+              <p class="text-[11px] text-slate-600">Fastest route for drawing reviews and site visits.</p>
             </div>
             <a href="https://wa.me/919820012345?text=Hello%20BuildIQ%20Projects%2C%20I%20would%20like%20to%20discuss%20our%20project%20scope." target="_blank" class="px-4 py-2 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-xs shadow-md transition-transform hover:scale-105 flex-shrink-0">
               Chat Now
@@ -1399,15 +2294,15 @@
           </div>
 
           <!-- Map & Pan-India Coverage Visual Badge -->
-          <div class="p-5 rounded-2xl bg-slate-900/80 border border-slate-800 space-y-3">
+          <div class="p-5 rounded-2xl bg-slate-50/80 border border-slate-200 space-y-3">
             <div class="flex items-center justify-between text-xs">
-              <span class="font-bold text-white flex items-center gap-1.5">
-                <i data-lucide="globe" class="w-4 h-4 text-blue-400"></i>
+              <span class="font-bold text-slate-900 flex items-center gap-1.5">
+                <i data-lucide="globe" class="w-4 h-4 text-blue-600"></i>
                 Execution Footprint
               </span>
-              <span class="text-amber-400 font-mono text-[10px]">Mumbai • Rajasthan • Pan-India</span>
+              <span class="text-amber-600 font-mono text-[10px]">Mumbai • Rajasthan • Pan-India</span>
             </div>
-            <p class="text-xs text-slate-400">
+            <p class="text-xs text-slate-500">
               Deploying standard operating procedures, BBS checklists, and technical staff across MMR, regional townships, and outstation multi-story developments.
             </p>
           </div>
@@ -1416,22 +2311,22 @@
 
         <!-- Right: Interactive Lead & Consultation Form -->
         <div class="lg:col-span-7 reveal-on-scroll">
-          <div class="p-6 sm:p-8 rounded-2xl bg-brand-surface border border-slate-800 shadow-2xl">
+          <div class="p-6 sm:p-8 rounded-2xl bg-slate-50 border border-slate-200 shadow-2xl">
             
-            <h3 class="text-lg font-bold text-white mb-2 flex items-center gap-2">
-              <i data-lucide="clipboard-list" class="w-5 h-5 text-amber-400"></i>
+            <h3 class="text-lg font-bold text-slate-900 mb-2 flex items-center gap-2">
+              <i data-lucide="clipboard-list" class="w-5 h-5 text-amber-600"></i>
               Get in Touch / Project Consultation Form
             </h3>
-            <p class="text-xs text-slate-400 mb-6">
+            <p class="text-xs text-slate-500 mb-6">
               Fill in your project details below. Our civil engineering team will review your scope within 24 hours.
             </p>
 
             <!-- Success Alert Toast -->
-            <div id="form-success-toast" class="hidden mb-6 p-4 rounded-xl bg-emerald-950/90 border border-emerald-600 text-emerald-200 text-xs sm:text-sm flex items-start gap-3">
-              <i data-lucide="check-circle-2" class="w-5 h-5 text-emerald-400 flex-shrink-0 mt-0.5"></i>
+            <div id="form-success-toast" class="hidden mb-6 p-4 rounded-xl bg-emerald-50 border border-emerald-300 text-emerald-800 text-xs sm:text-sm flex items-start gap-3">
+              <i data-lucide="check-circle-2" class="w-5 h-5 text-emerald-600 flex-shrink-0 mt-0.5"></i>
               <div>
                 <strong>Inquiry Received Successfully!</strong>
-                <p class="text-xs text-emerald-300/90 mt-0.5">
+                <p class="text-xs text-emerald-700/90 mt-0.5">
                   Thank you for contacting BuildIQ Projects. An engineering consultant will contact you shortly on your provided phone/email.
                 </p>
               </div>
@@ -1443,28 +2338,28 @@
               <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 <!-- Field 1: Name -->
                 <div>
-                  <label for="lead-name" class="block text-xs font-mono text-slate-300 mb-1.5 font-medium">Name *</label>
-                  <input type="text" id="lead-name" required placeholder="e.g. Rahul Sharma" class="w-full form-input rounded-xl p-3 text-sm bg-slate-950 border border-slate-800 text-white placeholder-slate-600">
+                  <label for="lead-name" class="block text-xs font-mono text-slate-600 mb-1.5 font-medium">Name *</label>
+                  <input type="text" id="lead-name" required placeholder="e.g. Rahul Sharma" class="w-full form-input rounded-xl p-3 text-sm bg-white border border-slate-200 text-slate-900 placeholder-slate-600">
                 </div>
 
                 <!-- Field 2: Phone Number -->
                 <div>
-                  <label for="lead-phone" class="block text-xs font-mono text-slate-300 mb-1.5 font-medium">Phone Number *</label>
-                  <input type="tel" id="lead-phone" required placeholder="+91 98XXX XXXXX" class="w-full form-input rounded-xl p-3 text-sm bg-slate-950 border border-slate-800 text-white placeholder-slate-600">
+                  <label for="lead-phone" class="block text-xs font-mono text-slate-600 mb-1.5 font-medium">Phone Number *</label>
+                  <input type="tel" id="lead-phone" required placeholder="+91 98XXX XXXXX" class="w-full form-input rounded-xl p-3 text-sm bg-white border border-slate-200 text-slate-900 placeholder-slate-600">
                 </div>
               </div>
 
               <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 <!-- Field 3: Project Location (City / State) -->
                 <div>
-                  <label for="lead-location" class="block text-xs font-mono text-slate-300 mb-1.5 font-medium">Project Location (City / State) *</label>
-                  <input type="text" id="lead-location" required placeholder="e.g. Mumbai, Maharashtra / Sikar, RJ" class="w-full form-input rounded-xl p-3 text-sm bg-slate-950 border border-slate-800 text-white placeholder-slate-600">
+                  <label for="lead-location" class="block text-xs font-mono text-slate-600 mb-1.5 font-medium">Project Location (City / State) *</label>
+                  <input type="text" id="lead-location" required placeholder="e.g. Mumbai, Maharashtra / Sikar, RJ" class="w-full form-input rounded-xl p-3 text-sm bg-white border border-slate-200 text-slate-900 placeholder-slate-600">
                 </div>
 
                 <!-- Field 4: Service Required -->
                 <div>
-                  <label for="lead-service" class="block text-xs font-mono text-slate-300 mb-1.5 font-medium">Service Required *</label>
-                  <select id="lead-service" required class="w-full form-input rounded-xl p-3 text-sm bg-slate-950 border border-slate-800 text-white">
+                  <label for="lead-service" class="block text-xs font-mono text-slate-600 mb-1.5 font-medium">Service Required *</label>
+                  <select id="lead-service" required class="w-full form-input rounded-xl p-3 text-sm bg-white border border-slate-200 text-slate-900">
                     <option value="PMC">Project Management Consultancy (PMC)</option>
                     <option value="Turnkey Construction">Turnkey Construction (Lock & Key)</option>
                     <option value="Architecture">Architecture & GFC Drawings</option>
@@ -1476,15 +2371,15 @@
 
               <!-- Field 5: Message / Scope Details -->
               <div>
-                <label for="lead-message" class="block text-xs font-mono text-slate-300 mb-1.5 font-medium">Message / Scope Details</label>
-                <textarea id="lead-message" rows="3" placeholder="Describe your site details, plot size / built-up area (sq.ft), project stage, timeline expectations, or contractor challenges..." class="w-full form-input rounded-xl p-3 text-sm bg-slate-950 border border-slate-800 text-white placeholder-slate-600"></textarea>
+                <label for="lead-message" class="block text-xs font-mono text-slate-600 mb-1.5 font-medium">Message / Scope Details</label>
+                <textarea id="lead-message" rows="3" placeholder="Describe your site details, plot size / built-up area (sq.ft), project stage, timeline expectations, or contractor challenges..." class="w-full form-input rounded-xl p-3 text-sm bg-white border border-slate-200 text-slate-900 placeholder-slate-600"></textarea>
               </div>
 
               <!-- File Upload Attachment -->
               <div>
-                <label class="block text-xs font-mono text-slate-300 mb-1.5">Optional: Attach Project Drawings / BOQ (PDF, DWG, ZIP)</label>
-                <label for="drawing-upload" class="flex items-center justify-center gap-2 p-3 rounded-xl border border-dashed border-slate-700 bg-slate-950/50 hover:bg-slate-900 cursor-pointer text-xs text-slate-400 transition-colors">
-                  <i data-lucide="paperclip" class="w-4 h-4 text-amber-400"></i>
+                <label class="block text-xs font-mono text-slate-600 mb-1.5">Optional: Attach Project Drawings / BOQ (PDF, DWG, ZIP)</label>
+                <label for="drawing-upload" class="flex items-center justify-center gap-2 p-3 rounded-xl border border-dashed border-slate-300 bg-white/50 hover:bg-slate-50 cursor-pointer text-xs text-slate-500 transition-colors">
+                  <i data-lucide="paperclip" class="w-4 h-4 text-amber-600"></i>
                   <span id="upload-status-text">Click to attach drawings or BOQ files</span>
                 </label>
                 <input type="file" id="drawing-upload" class="hidden" multiple accept=".pdf,.dwg,.zip,.rar,.doc,.docx,.png,.jpg">
@@ -1515,7 +2410,7 @@
   <!-- =========================================================================
        FOOTER
        ========================================================================= -->
-  <footer class="py-12 bg-slate-950 border-t border-slate-900 text-xs text-slate-400">
+  <footer class="py-12 bg-white border-t border-slate-200 text-xs text-slate-500">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-8">
       
       <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
@@ -1526,9 +2421,9 @@
             <div class="w-8 h-8 rounded-lg bg-amber-500 flex items-center justify-center text-slate-950 font-bold">
               <i data-lucide="building-2" class="w-4 h-4"></i>
             </div>
-            <span class="text-base font-bold text-white">BuildIQ Projects</span>
+            <span class="text-base font-bold text-slate-900">BuildIQ Projects</span>
           </div>
-          <p class="text-xs text-slate-400 leading-relaxed max-w-md">
+          <p class="text-xs text-slate-500 leading-relaxed max-w-md">
             Project Management Consultancy | Architecture | Turnkey Construction.<br>
             Engineering-Led client-side PMC, in-house architectural design, and complete turnkey civil execution backed by 20+ years of ground-level experience.
           </p>
@@ -1539,25 +2434,25 @@
 
         <!-- Quick Links -->
         <div class="space-y-2">
-          <span class="font-bold text-white text-xs uppercase tracking-wider font-mono">Navigation</span>
-          <ul class="space-y-1.5 text-xs text-slate-400">
-            <li><a href="#home" class="hover:text-amber-400">Home</a></li>
-            <li><a href="#services" class="hover:text-amber-400">Core Services</a></li>
-            <li><a href="#featured-project" class="hover:text-amber-400">Featured Project (Sikar)</a></li>
-            <li><a href="#portfolio" class="hover:text-amber-400">Portfolio & Experience</a></li>
-            <li><a href="#about-founder" class="hover:text-amber-400">About Founder</a></li>
-            <li><a href="#contact" class="hover:text-amber-400">Contact Us</a></li>
+          <span class="font-bold text-slate-900 text-xs uppercase tracking-wider font-mono">Navigation</span>
+          <ul class="space-y-1.5 text-xs text-slate-500">
+            <li><a href="#home" class="hover:text-amber-600">Home</a></li>
+            <li><a href="#services" class="hover:text-amber-600">Core Services</a></li>
+            <li><a href="#featured-project" class="hover:text-amber-600">Featured Project (Sikar)</a></li>
+            <li><a href="#portfolio" class="hover:text-amber-600">Portfolio & Experience</a></li>
+            <li><a href="#about-founder" class="hover:text-amber-600">About Founder</a></li>
+            <li><a href="#contact" class="hover:text-amber-600">Contact Us</a></li>
           </ul>
         </div>
 
         <!-- Contact & Legal -->
         <div class="space-y-2">
-          <span class="font-bold text-white text-xs uppercase tracking-wider font-mono">Direct Contact</span>
-          <p class="text-xs text-slate-300">
-            Email: <a href="mailto:contact@buildiqprojects.com" class="text-amber-400 hover:underline">contact@buildiqprojects.com</a>
+          <span class="font-bold text-slate-900 text-xs uppercase tracking-wider font-mono">Direct Contact</span>
+          <p class="text-xs text-slate-600">
+            Email: <a href="mailto:contact@buildiqprojects.com" class="text-amber-600 hover:underline">contact@buildiqprojects.com</a>
           </p>
-          <p class="text-xs text-slate-300">
-            Phone / WA: <a href="tel:+919820012345" class="text-amber-400 hover:underline">+91 98200 12345</a>
+          <p class="text-xs text-slate-600">
+            Phone / WA: <a href="tel:+919820012345" class="text-amber-600 hover:underline">+91 98200 12345</a>
           </p>
           <p class="text-[11px] text-slate-500 pt-2">
             Pan-India Execution • Mumbai MMR • Outstation
@@ -1566,7 +2461,7 @@
 
       </div>
 
-      <div class="pt-8 border-t border-slate-900 flex flex-col sm:flex-row items-center justify-between gap-4 text-slate-500">
+      <div class="pt-8 border-t border-slate-200 flex flex-col sm:flex-row items-center justify-between gap-4 text-slate-500">
         <p>© <span id="year-display">2026</span> BuildIQ Projects. All Rights Reserved.</p>
         <p class="font-mono text-[11px]">PMC • Architecture • Turnkey Construction</p>
       </div>
@@ -1586,8 +2481,8 @@
       </a>
 
       <!-- 2. Call Now Button -->
-      <a href="tel:+919820012345" class="flex flex-col items-center justify-center py-2 px-1 rounded-xl bg-slate-800 text-amber-400 border border-slate-700 font-bold text-xs shadow-md active:scale-95 transition-transform">
-        <i data-lucide="phone-call" class="w-4 h-4 mb-0.5 text-amber-400"></i>
+      <a href="tel:+919820012345" class="flex flex-col items-center justify-center py-2 px-1 rounded-xl bg-slate-100 text-amber-600 border border-slate-300 font-bold text-xs shadow-md active:scale-95 transition-transform">
+        <i data-lucide="phone-call" class="w-4 h-4 mb-0.5 text-amber-600"></i>
         <span class="text-[10px]">Call Now</span>
       </a>
 
@@ -1603,8 +2498,8 @@
   <div class="hidden lg:flex whatsapp-float-container">
     <a href="https://wa.me/919820012345?text=Hello%20BuildIQ%20Projects%2C%20I%20would%20like%20to%20discuss%20our%20project%20scope." target="_blank" class="whatsapp-float-card" title="Chat with BuildIQ Projects Engineer on WhatsApp">
       <div class="flex flex-col text-left">
-        <span class="text-[10px] uppercase font-mono text-slate-400 tracking-wider">Direct Engineer Desk</span>
-        <span class="text-xs font-bold text-white">Chat on WhatsApp</span>
+        <span class="text-[10px] uppercase font-mono text-slate-500 tracking-wider">Direct Engineer Desk</span>
+        <span class="text-xs font-bold text-slate-900">Chat on WhatsApp</span>
       </div>
     </a>
     <a href="https://wa.me/919820012345?text=Hello%20BuildIQ%20Projects%2C%20I%20would%20like%20to%20discuss%20our%20project%20scope." target="_blank" class="whatsapp-float-btn" aria-label="Connect on WhatsApp">
@@ -1617,33 +2512,33 @@
        SAMPLE AUDIT / INSPECTION REPORT MODAL
        ========================================================================= -->
   <div id="sample-report-modal" class="fixed inset-0 z-50 modal-backdrop hidden flex items-center justify-center p-4 sm:p-6 overflow-y-auto">
-    <div class="relative w-full max-w-3xl bg-slate-900 border border-amber-500/40 rounded-2xl shadow-2xl overflow-hidden my-8">
+    <div class="relative w-full max-w-3xl bg-slate-50 border border-amber-500/40 rounded-2xl shadow-2xl overflow-hidden my-8">
       
-      <div class="flex items-center justify-between px-6 py-4 border-b border-slate-800 bg-slate-950">
+      <div class="flex items-center justify-between px-6 py-4 border-b border-slate-200 bg-white">
         <div class="flex items-center gap-2.5">
-          <i data-lucide="file-check-2" class="w-5 h-5 text-amber-400"></i>
-          <span class="font-bold text-white text-sm sm:text-base">Sample Engineering Audit & BBS Verification Report</span>
+          <i data-lucide="file-check-2" class="w-5 h-5 text-amber-600"></i>
+          <span class="font-bold text-slate-900 text-sm sm:text-base">Sample Engineering Audit & BBS Verification Report</span>
         </div>
-        <button id="close-report-modal" class="p-1.5 rounded-lg text-slate-400 hover:text-white hover:bg-slate-800">
+        <button id="close-report-modal" class="p-1.5 rounded-lg text-slate-500 hover:text-slate-900 hover:bg-slate-100">
           <i data-lucide="x" class="w-5 h-5"></i>
         </button>
       </div>
 
-      <div class="p-6 space-y-5 text-xs text-slate-300 max-h-[75vh] overflow-y-auto font-mono">
-        <div class="p-4 rounded-xl bg-slate-950 border border-slate-800 space-y-2">
-          <div class="flex justify-between text-slate-400">
+      <div class="p-6 space-y-5 text-xs text-slate-600 max-h-[75vh] overflow-y-auto font-mono">
+        <div class="p-4 rounded-xl bg-white border border-slate-200 space-y-2">
+          <div class="flex justify-between text-slate-500">
             <span>Project: G+4 Multi-Story Development</span>
             <span>Location: Sikar, Rajasthan</span>
           </div>
-          <div class="flex justify-between text-slate-400">
+          <div class="flex justify-between text-slate-500">
             <span>Audit Date: Current Cycle</span>
             <span>Auditing Authority: BuildIQ PMC</span>
           </div>
         </div>
 
         <div class="space-y-2">
-          <div class="text-sm font-bold text-white font-sans">1. Steel Reinforcement (BBS) Checklist:</div>
-          <ul class="space-y-1.5 text-slate-300 bg-slate-950/60 p-3 rounded-xl border border-slate-800">
+          <div class="text-sm font-bold text-slate-900 font-sans">1. Steel Reinforcement (BBS) Checklist:</div>
+          <ul class="space-y-1.5 text-slate-600 bg-white/60 p-3 rounded-xl border border-slate-200">
             <li class="flex items-center gap-2">✓ Column Main Vertical Bars: 8-T20 Fe550D verified against Structural Drawing S-04.</li>
             <li class="flex items-center gap-2">✓ Lap Zone Staggering: 50% staggered at mid-height, compliant with IS 13920.</li>
             <li class="flex items-center gap-2">✓ Stirrup Hook: 135° bend with 10d extension confirmed.</li>
@@ -1652,21 +2547,21 @@
         </div>
 
         <div class="space-y-2">
-          <div class="text-sm font-bold text-white font-sans">2. Contractor RA Bill Verification Summary:</div>
-          <ul class="space-y-1.5 text-slate-300 bg-slate-950/60 p-3 rounded-xl border border-slate-800">
+          <div class="text-sm font-bold text-slate-900 font-sans">2. Contractor RA Bill Verification Summary:</div>
+          <ul class="space-y-1.5 text-slate-600 bg-white/60 p-3 rounded-xl border border-slate-200">
             <li>• Contractor Claim: ₹24,80,000</li>
             <li>• PMC Certified Amount: ₹23,14,620</li>
-            <li class="text-amber-400 font-bold">• Disallowed Deductions: ₹1,65,380 (excess quantity & unapproved variation)</li>
+            <li class="text-amber-600 font-bold">• Disallowed Deductions: ₹1,65,380 (excess quantity & unapproved variation)</li>
           </ul>
         </div>
 
-        <div class="p-4 rounded-xl bg-amber-950/40 border border-amber-800/60 text-amber-200">
+        <div class="p-4 rounded-xl bg-amber-50 border border-amber-800/60 text-amber-800">
           <strong>BuildIQ Direct Guarantee:</strong> Every active site receives weekly measurement certificates and physical audit logs signed by qualified civil engineers.
         </div>
       </div>
 
-      <div class="p-4 border-t border-slate-800 bg-slate-950 flex justify-end gap-3">
-        <button id="close-modal-bottom" class="px-4 py-2 rounded-xl bg-slate-800 text-slate-200 text-xs font-semibold hover:bg-slate-700">
+      <div class="p-4 border-t border-slate-200 bg-white flex justify-end gap-3">
+        <button id="close-modal-bottom" class="px-4 py-2 rounded-xl bg-slate-100 text-slate-700 text-xs font-semibold hover:bg-slate-700">
           Close
         </button>
         <a href="#contact" class="px-5 py-2 rounded-xl bg-amber-500 text-slate-950 font-bold text-xs hover:bg-amber-400 flex items-center gap-1.5">
