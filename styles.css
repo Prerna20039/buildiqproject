@@ -142,11 +142,26 @@ header.scrolled {
   box-shadow: 0 4px 20px rgba(15, 23, 42, 0.08);
 }
 
-/* Gold Gradient Accents */
-.gold-gradient-text {
-  background: linear-gradient(135deg, #FDE047 0%, #EAB308 50%, #CA8A04 100%);
+/* Red Gradient Accents */
+
+.red-gradient-text {
+  background: linear-gradient(135deg, #E05252 0%, #C73636 50%, #991B1B 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.gold-gradient-text {
+  background: linear-gradient(
+    135deg,
+    #EF4444 0%,
+    #DC2626 50%,
+    #B91C1C 100%
+  );
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 
 .gold-gradient-bg {
@@ -248,7 +263,7 @@ header.scrolled {
 }
 
 .whatsapp-float-card {
-  background: rgba(11, 16, 30, 0.95);
+  background: rgba(212, 219, 238, 0.95);
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
   border: 1px solid rgba(234, 179, 8, 0.35);
