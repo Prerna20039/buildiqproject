@@ -2,7 +2,7 @@
 
 > **Engineering-Led Project Management, Architecture & Turnkey Construction Across India.**
 
-A modern, high-converting, responsive platform for **BuildIQ Projects**, delivering independent client-side PMC, in-house architectural design, and complete turnkey civil execution backed by 20+ years of ground-level engineering experience.
+A modern, high-converting, responsive platform for **BuildIQ Projects**, delivering independent client-side PMC, in-house architectural design, and complete turnkey civil execution backed by 22+ years of ground-level engineering experience.
 
 ---
 
@@ -59,7 +59,7 @@ BuildIQ Projects provides independent client-side Project Management Consultancy
    - Private & Commercial Developments (Corporate Offices & Luxury Residences)
 
 8. **About the Founder**:
-   - Built on 20+ Years of Ground-Level Civil Engineering.
+   - Built on 22+ Years of Ground-Level Civil Engineering.
    - B.Tech Civil Engineering pedigree with Western Railway, MES, and MHADA on-site mastery.
 
 9. **Contact & Head Office Location**:

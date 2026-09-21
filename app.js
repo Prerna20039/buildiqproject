@@ -501,6 +501,56 @@ document.addEventListener('DOMContentLoaded', () => {
   // 6. Portfolio Category Filter Tabs
   // =============================================================
 
+  const portfolioFilterButtons = document.querySelectorAll(".portfolio-filter-btn");
+
+portfolioFilterButtons.forEach(button => {
+
+  button.addEventListener("click", function () {
+
+    // Remove active styling from all buttons
+    portfolioFilterButtons.forEach(btn => {
+      btn.classList.remove(
+        "bg-amber-500",
+        "text-slate-950",
+        "font-bold",
+        "shadow-md",
+        "shadow-amber-500/20"
+      );
+
+      btn.classList.add(
+        "text-slate-500",
+        "bg-slate-50",
+        "border",
+        "border-slate-200"
+      );
+    });
+
+    // Add active styling to clicked button
+    this.classList.remove(
+      "text-slate-500",
+      "bg-slate-50",
+      "border",
+      "border-slate-200"
+    );
+
+    this.classList.add(
+      "bg-amber-500",
+      "text-slate-950",
+      "font-bold",
+      "shadow-md",
+      "shadow-amber-500/20"
+    );
+
+    // Get selected filter
+    const filter = this.dataset.filter;
+
+    console.log("Selected filter:", filter);
+
+    // Your existing project filtering code should go here
+  });
+
+});
+
   const portfolioFilterBtns =
     document.querySelectorAll(
       '.portfolio-filter-btn'

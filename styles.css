@@ -52,24 +52,43 @@
   box-sizing: border-box;
 }
 
+/* =========================================================
+   FULL WIDTH PAGE RESET
+   ========================================================= */
+
 html {
   scroll-behavior: smooth;
   font-family: var(--font-body);
-  background-color: var(--bg-primary);
+  background: #ffffff;
   color: var(--text-primary);
+
+  margin: 0;
+  padding: 0;
+
+  width: 100%;
+  min-width: 100%;
+  overflow-x: hidden;
+
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  overflow-x: hidden;
-  width: 100%;
 }
 
 body {
-  margin: 0;
+  margin: 0 !important;
   padding: 0;
-  overflow-x: hidden;
-  width: 100%;
+  width: 100% !important;
+  min-width: 100%;
+  max-width: none;
+
   position: relative;
+  overflow-x: hidden;
+
   line-height: 1.6;
+}
+
+/* Make the main page wrapper completely edge-to-edge */
+body > * {
+  max-width: none;
 }
 
 /* Mobile Sticky Bar Bottom Offset for Body Content */
@@ -280,13 +299,13 @@ header.scrolled {
 
 .whatsapp-float-card:hover {
   border-color: #EAB308;
-  background: rgba(18, 26, 47, 0.98);
+  background: rgba(215, 221, 237, 0.98);
   transform: translateX(-3px);
 }
 
 /* Modal Backdrop */
 .modal-backdrop {
-  background-color: rgba(6, 9, 17, 0.85);
+  background-color: rgba(164, 180, 225, 0.85);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
 }
@@ -316,4 +335,34 @@ header.scrolled {
   a {
     touch-action: manipulation;
   }
+}
+
+/* =========================================================
+   EDGE-TO-EDGE SECTIONS
+   ========================================================= */
+
+#main-header {
+  width: 100% !important;
+  left: 0 !important;
+  right: 0 !important;
+}
+
+section,
+footer {
+  width: 100%;
+  max-width: none;
+}
+
+/* Prevent accidental horizontal gaps */
+img,
+video,
+iframe {
+  max-width: 100%;
+}
+
+/* No default spacing around the page */
+html,
+body {
+  margin-left: 0 !important;
+  margin-right: 0 !important;
 }
