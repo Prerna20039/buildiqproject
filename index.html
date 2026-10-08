@@ -47,56 +47,64 @@
   <!-- =========================================================================
        HEADER & NAVIGATION (LOGO TOUCHPOINT 1)
        ========================================================================= -->
-  <header id="main-header" class="fixed top-0 left-0 right-0 z-50 bg-white border-b border-slate-200 shadow-sm transition-all duration-300">
-    <div class="w-full px-4 sm:px-6 lg:px-8">
-      <div class="flex items-center justify-between h-20">
+  
+    <header id="main-header" class="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-md border-b border-slate-200 shadow-sm transition-all duration-300">
+      <div class="w-full px-4 sm:px-6 lg:px-8">
+        <div class="flex items-center justify-between h-20 gap-3">
 
-        <!-- LOGO BRAND (IMAGE INTEGRATED) -->
-        <a href="#home" class="flex items-center gap-3">
-          <div class="h-12 sm:h-14 py-1 flex items-center">
+          <!-- ================= BRAND / LOGO ================= -->
+          <a href="#home" class="flex items-center gap-2 sm:gap-3 shrink-0">
             <img 
               src="/assets/images/BuildIQ  logo PNG blue.png" 
               alt="BuildIQ Projects — PMC & Civil Contractors" 
-              class="h-10 sm:h-12 w-auto object-contain rounded-md"
+              class="h-9 sm:h-11 md:h-12 w-auto object-contain"
             >
-          </div>
-          <div class="hidden sm:flex flex-col justify-center leading-none pl-1 border-l border-slate-300">
-            <span class="text-[10px] uppercase tracking-[0.16em] text-cyan-700 font-mono font-bold">
-              PMC &amp; CIVIL CONTRACTORS
-            </span>
-          </div>
-        </a>
-
-        <!-- DESKTOP NAV -->
-        <nav class="hidden xl:flex items-center gap-1 text-sm font-semibold text-slate-600">
-          <a href="#home" class="nav-link px-3 py-2 active hover:text-brand-cyan transition-colors">Home</a>
-          <a href="#services" class="nav-link px-3 py-2 hover:text-brand-cyan transition-colors">Core Services</a>
-          <a href="#featured-project" class="nav-link px-3 py-2 hover:text-brand-cyan transition-colors">Featured Track</a>
-          <a href="#portfolio" class="nav-link px-3 py-2 hover:text-brand-cyan transition-colors">Site Execution</a>
-          <a href="#about-founder" class="nav-link px-3 py-2 hover:text-brand-cyan transition-colors">About Us</a>
-          <a href="#contact" class="nav-link px-3 py-2 hover:text-brand-cyan transition-colors">Contact</a>
-        </nav>
-
-        <!-- CTA -->
-        <div class="hidden xl:flex items-center gap-3">
-          <a href="tel:+918652223456" class="text-xs font-mono font-bold text-slate-700 hover:text-brand-cyan flex items-center gap-1.5 px-3 py-2">
-            <i data-lucide="phone" class="w-3.5 h-3.5 text-brand-cyan"></i>
-            +91 86522 23456
+            <!-- Hide the border & subtitle on screens below 1440px to give links breathing room -->
+            <div class="hidden 2xl:flex flex-col justify-center leading-none pl-2.5 border-l border-slate-300">
+              <span class="text-[10px] uppercase tracking-[0.16em] text-cyan-700 font-mono font-bold whitespace-nowrap">
+                PMC &amp; CIVIL CONTRACTORS
+              </span>
+            </div>
           </a>
-          <a href="#contact" class="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-brand-navy hover:bg-brand-navyLight text-white text-xs font-bold shadow-md shadow-brand-navy/20 transition-all border border-cyan-500/40">
-            <i data-lucide="clipboard-check" class="w-4 h-4 text-brand-cyan"></i>
-            <span>Consult Engineer</span>
-          </a>
+
+          <!-- ================= DESKTOP NAV ================= -->
+          <nav class="hidden xl:flex items-center justify-center gap-1 2xl:gap-2 text-[13px] 2xl:text-sm font-semibold text-slate-700 whitespace-nowrap">
+            <a href="#home" class="nav-link px-2.5 py-1.5 rounded-lg hover:text-brand-cyan hover:bg-slate-50 transition-colors">Home</a>
+            <a href="#services" class="nav-link px-2.5 py-1.5 rounded-lg hover:text-brand-cyan hover:bg-slate-50 transition-colors">Core Services</a>
+            <a href="#featured-project" class="nav-link px-2.5 py-1.5 rounded-lg hover:text-brand-cyan hover:bg-slate-50 transition-colors">Featured Track</a>
+            <a href="#portfolio" class="nav-link px-2.5 py-1.5 rounded-lg hover:text-brand-cyan hover:bg-slate-50 transition-colors">Site Execution</a>
+            <a href="#about-founder" class="nav-link px-2.5 py-1.5 rounded-lg hover:text-brand-cyan hover:bg-slate-50 transition-colors">About Us</a>
+            <a href="#contact" class="nav-link px-2.5 py-1.5 rounded-lg hover:text-brand-cyan hover:bg-slate-50 transition-colors">Contact</a>
+          </nav>
+
+          <!-- ================= RIGHT ACTIONS ================= -->
+          <div class="hidden xl:flex items-center gap-3 shrink-0">
+            <!-- Phone number: strictly single-line, visible on large screens -->
+            <a href="tel:+918652223456" class="hidden 2xl:flex items-center gap-1.5 text-xs font-mono font-bold text-slate-700 hover:text-brand-cyan whitespace-nowrap px-2 py-1.5">
+              <i data-lucide="phone" class="w-3.5 h-3.5 text-brand-cyan shrink-0"></i>
+              <span>+91 86522 23456</span>[cite: 12]
+            </a>
+
+            <!-- CTA Button -->
+            <a href="#contact" class="inline-flex items-center gap-2 px-4 2xl:px-5 py-2.5 rounded-xl bg-brand-navy hover:bg-brand-navyLight text-white text-xs font-bold shadow-md shadow-brand-navy/20 transition-all border border-cyan-500/40 whitespace-nowrap">
+              <i data-lucide="clipboard-check" class="w-4 h-4 text-brand-cyan shrink-0"></i>
+              <span>Consult Engineer</span>
+            </a>
+          </div>
+
+          <!-- ================= MOBILE / TABLET TOGGLE ================= -->
+          <button 
+            id="mobile-menu-btn" 
+            type="button" 
+            class="xl:hidden p-2.5 rounded-xl text-slate-700 bg-slate-100 hover:text-brand-cyan hover:bg-slate-200 transition-colors shrink-0" 
+            aria-label="Open menu"
+          >
+            <i data-lucide="menu" class="w-6 h-6"></i>
+          </button>
+
         </div>
-
-        <!-- Mobile Menu Toggle -->
-        <button id="mobile-menu-btn" type="button" class="xl:hidden p-2.5 rounded-xl text-slate-700 bg-slate-100 hover:text-brand-cyan" aria-label="Open menu">
-          <i data-lucide="menu" class="w-6 h-6"></i>
-        </button>
-
       </div>
-    </div>
-  </header>
+    </header>
 
   <!-- =========================================================================
        MOBILE DRAWER MENU (LOGO TOUCHPOINT 2)
@@ -600,11 +608,12 @@
   </section>
 
   <!-- =========================================================================
-       5. PORTFOLIO & SITE EXECUTION
+       5. PORTFOLIO & SITE EXECUTION (3 PROJECTS PER CATEGORY)
        ========================================================================= -->
   <section id="portfolio" class="py-20 lg:py-28 bg-white relative border-b border-slate-200">
     <div class="mx-auto px-4 sm:px-6 lg:px-8">
 
+      <!-- Section Header -->
       <div class="text-center max-w-3xl mx-auto mb-12 reveal-on-scroll">
         <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-cyan-50 border border-brand-cyan/30 text-cyan-800 text-xs font-mono font-semibold uppercase tracking-wider mb-4">
           <i data-lucide="briefcase" class="w-3.5 h-3.5 text-brand-cyan"></i>
@@ -614,30 +623,34 @@
           Hands-On Experience Across <span class="cyan-gradient-text">Infrastructure &amp; Civil Works</span>
         </h2>
         <p class="text-slate-600 text-sm sm:text-base mt-3">
-          Proven projects executed for Western Railway, Military Engineer Services (MES), MHADA, and private developments.
+          Proven projects executed for Western Railway, Military Engineer Services (MES), MHADA, and private developments[cite: 6].
         </p>
       </div>
 
       <!-- Category Filter Tabs -->
       <div class="flex flex-wrap justify-center gap-2.5 mb-12 reveal-on-scroll">
         <button type="button" data-filter="all" class="portfolio-filter-btn px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold bg-brand-navy text-white font-bold transition-all shadow-md">
-          All Projects
+          All Projects (9)
         </button>
-        <button type="button" data-filter="railways-defense" class="portfolio-filter-btn px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold text-slate-600 hover:text-slate-900 bg-slate-50 border border-slate-200 transition-all">
-          Railways &amp; Defense (MES)
+        <button type="button" data-filter="railways-defense" class="portfolio-filter-btn px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold text-slate-600  bg-slate-50 border border-slate-200 transition-all">
+          Railways &amp; Defense (MES) (3)
         </button>
-        <button type="button" data-filter="housing" class="portfolio-filter-btn px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold text-slate-600 hover:text-slate-900 bg-slate-50 border border-slate-200 transition-all">
-          Public Housing (MHADA)
+        <button type="button" data-filter="housing" class="portfolio-filter-btn px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold text-slate-600  bg-slate-50 border border-slate-200 transition-all">
+          Public Housing (MHADA) (3)
         </button>
-        <button type="button" data-filter="private" class="portfolio-filter-btn px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold text-slate-600 hover:text-slate-900 bg-slate-50 border border-slate-200 transition-all">
-          Private Sector &amp; Commercial
+        <button type="button" data-filter="private" class="portfolio-filter-btn px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold text-slate-600  bg-slate-50 border border-slate-200 transition-all">
+          Private Sector &amp; Commercial (3)
         </button>
       </div>
 
-      <!-- Projects Grid -->
+      <!-- Projects Grid (9 Cards) -->
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7">
 
-        <!-- 1. MES Bhandup / Powai -->
+        <!-- =================================================================
+             CATEGORY 1: RAILWAYS & DEFENSE (MES) — 3 PROJECTS
+             ================================================================= -->
+
+        <!-- 1.1 MES Type I Powai / Bhandup -->
         <div class="project-card rounded-2xl bg-slate-50 border border-slate-200 overflow-hidden hover:border-brand-cyan transition-all flex flex-col justify-between shadow-sm" data-category="railways-defense">
           <div>
             <div class="relative h-60 overflow-hidden">
@@ -653,7 +666,7 @@
               <span class="text-xs font-mono text-cyan-700">KanjurMarg, Powai, Mumbai</span>
               <h3 class="text-lg font-bold text-brand-navy">M.E.S RCC G+4 Residential Staff 48 Quarters</h3>
               <p class="text-xs text-slate-600 leading-relaxed">
-                Turnkey civil construction, internal campus concrete roads with stormwater drainage, terrace fiber-mesh waterproofing (7,000 sq.ft) &amp; 14,000 sq.ft toilet polymer coating.
+                Turnkey civil construction, internal campus concrete roads with stormwater drainage, terrace fiber-mesh waterproofing (~7,000 sq.ft) &amp; ~14,000 sq.ft toilet polymer coating[cite: 9, 12].
               </p>
             </div>
           </div>
@@ -663,7 +676,7 @@
           </div>
         </div>
 
-        <!-- 2. Western Railway Bandra -->
+        <!-- 1.2 Western Railway Staff Quarters Type-1 Bandra -->
         <div class="project-card rounded-2xl bg-slate-50 border border-slate-200 overflow-hidden hover:border-brand-cyan transition-all flex flex-col justify-between shadow-sm" data-category="railways-defense">
           <div>
             <div class="relative h-60 overflow-hidden">
@@ -677,9 +690,9 @@
             </div>
             <div class="p-6 space-y-2.5">
               <span class="text-xs font-mono text-cyan-700">Bandra (W), Mumbai</span>
-              <h3 class="text-lg font-bold text-brand-navy">W. Rly Construction of RCC Staff Quarters</h3>
+              <h3 class="text-lg font-bold text-brand-navy">W. Rly Construction of RCC Staff Quarters Type-I</h3>
               <p class="text-xs text-slate-600 leading-relaxed">
-                Complete ground-to-terrace RCC frame with RMC &amp; TMT steel, ~21,000 sq.ft terrace fiber-mesh waterproofing, 60,000 sq.ft weatherproof plastering and PU sealants.
+                Ground-to-terrace RCC frame using RMC &amp; TMT steel, ~21,000 sq.ft terrace fiber-mesh chemical waterproofing, and ~60,000 sq.ft exterior weatherproof protective painting[cite: 10, 12].
               </p>
             </div>
           </div>
@@ -689,7 +702,37 @@
           </div>
         </div>
 
-        <!-- 3. MHADA Chinchpokli / Mankhurd -->
+        <!-- 1.3 MES Residential Staff Quarters Type II Powai -->
+        <div class="project-card rounded-2xl bg-slate-50 border border-slate-200 overflow-hidden hover:border-brand-cyan transition-all flex flex-col justify-between shadow-sm" data-category="railways-defense">
+          <div>
+            <div class="relative h-60 overflow-hidden">
+              <img src="assets/images/MES TYPE II QUARTER BHANDP.png" alt="MES Type II Quarters Powai" class="w-full h-full object-cover">
+              <div class="absolute top-3 left-3 px-3 py-1 bg-brand-navy text-white text-[10px] font-bold uppercase rounded-lg">
+                Defense Infrastructure
+              </div>
+              <div class="absolute top-3 right-3 px-2.5 py-1 bg-white/90 text-emerald-700 font-mono text-[10px] font-bold rounded-lg border border-emerald-300">
+                MES Compliant
+              </div>
+            </div>
+            <div class="p-6 space-y-2.5">
+              <span class="text-xs font-mono text-cyan-700">Powai / Bhandup, Mumbai</span>
+              <h3 class="text-lg font-bold text-brand-navy">Defense Residential Quarters Type II (G+4)</h3>
+              <p class="text-xs text-slate-600 leading-relaxed">
+                Multi-storey staff accommodation featuring high-performance elastomeric waterproofing membranes, structural crack filling, and mandatory 72-hour water ponding tests[cite: 7, 9, 12].
+              </p>
+            </div>
+          </div>
+          <div class="px-6 pb-6 pt-2 border-t border-slate-200/80 flex items-center justify-between text-xs font-mono text-slate-500">
+            <span>MES Specifications</span>
+            <span class="text-brand-cyan font-bold">Lock &amp; Key</span>
+          </div>
+        </div>
+
+        <!-- =================================================================
+             CATEGORY 2: PUBLIC HOUSING (MHADA) — 3 PROJECTS
+             ================================================================= -->
+
+        <!-- 2.1 MHADA Mankhurd L.I.G T/S "A" Type -->
         <div class="project-card rounded-2xl bg-slate-50 border border-slate-200 overflow-hidden hover:border-brand-cyan transition-all flex flex-col justify-between shadow-sm" data-category="housing">
           <div>
             <div class="relative h-60 overflow-hidden">
@@ -698,14 +741,14 @@
                 MHADA Housing
               </div>
               <div class="absolute top-3 right-3 px-2.5 py-1 bg-white/90 text-emerald-700 font-mono text-[10px] font-bold rounded-lg border border-emerald-300">
-                ₹4.32 Cr Certified
+                ₹4.32 Cr Tender
               </div>
             </div>
             <div class="p-6 space-y-2.5">
-              <span class="text-xs font-mono text-cyan-700">Mankhurd / Chinchpokli, Mumbai</span>
+              <span class="text-xs font-mono text-cyan-700">Mankhurd, Mumbai</span>
               <h3 class="text-lg font-bold text-brand-navy">L.I.G T/S "A" Type Residential Buildings</h3>
               <p class="text-xs text-slate-600 leading-relaxed">
-                ~58,500 sq.ft built-up area: deep RCC footings, multi-storey framing, full MEP infrastructure, internal finishing, and exterior china mosaic heat reflection.
+                ~58,500 sq.ft built-up area: deep RCC footings, multi-storey framing, complete internal plastering, vitrified flooring, electrical networks, and china mosaic UV heat-reflective terrace finish[cite: 11].
               </p>
             </div>
           </div>
@@ -715,7 +758,63 @@
           </div>
         </div>
 
-        <!-- 4. Khatija Apartment Bandra -->
+        <!-- 2.2 MHADA Chinchpokli G+7 Reconstruction -->
+        <div class="project-card rounded-2xl bg-slate-50 border border-slate-200 overflow-hidden hover:border-brand-cyan transition-all flex flex-col justify-between shadow-sm" data-category="housing">
+          <div>
+            <div class="relative h-60 overflow-hidden">
+              <img src="assets/images/mhada.webp" alt="MHADA Chinchpokli G+7 RCC Reconstruction" class="w-full h-full object-cover">
+              <div class="absolute top-3 left-3 px-3 py-1 bg-brand-navy text-white text-[10px] font-bold uppercase rounded-lg">
+                M.B.R.&amp;R. Board
+              </div>
+              <div class="absolute top-3 right-3 px-2.5 py-1 bg-white/90 text-emerald-700 font-mono text-[10px] font-bold rounded-lg border border-emerald-300">
+                ₹2.21 Cr Certified
+              </div>
+            </div>
+            <div class="p-6 space-y-2.5">
+              <span class="text-xs font-mono text-cyan-700">Chinchpokli, Mumbai</span>
+              <h3 class="text-lg font-bold text-brand-navy">Multi-Storey Reconstruction RCC G+7</h3>
+              <p class="text-xs text-slate-600 leading-relaxed">
+                Ground-to-terrace RCC framing, ~4,800 sq.ft terrace fiber-mesh coating verified by 3-day ponding test, and ~18,000 sq.ft sunken wet area sealants across 60+ flats[cite: 8].
+              </p>
+            </div>
+          </div>
+          <div class="px-6 pb-6 pt-2 border-t border-slate-200/80 flex items-center justify-between text-xs font-mono text-slate-500">
+            <span>RCC Reconstruction</span>
+            <span class="text-brand-cyan font-bold">100% Completed</span>
+          </div>
+        </div>
+
+        <!-- 2.3 Cooperative Housing Society Redevelopment & Repairs -->
+        <div class="project-card rounded-2xl bg-slate-50 border border-slate-200 overflow-hidden hover:border-brand-cyan transition-all flex flex-col justify-between shadow-sm" data-category="housing">
+          <div>
+            <div class="relative h-60 overflow-hidden">
+              <img src="assets/images/chc_proj.jpg" alt="Cooperative Housing Society Redevelopment Mumbai" class="w-full h-full object-cover">
+              <div class="absolute top-3 left-3 px-3 py-1 bg-brand-navy text-white text-[10px] font-bold uppercase rounded-lg">
+                Co-Op Housing
+              </div>
+              <div class="absolute top-3 right-3 px-2.5 py-1 bg-white/90 text-cyan-800 font-mono text-[10px] font-bold rounded-lg border border-cyan-300">
+                Structural Audit + PMC
+              </div>
+            </div>
+            <div class="p-6 space-y-2.5">
+              <span class="text-xs font-mono text-cyan-700">Mumbai Suburbs</span>
+              <h3 class="text-lg font-bold text-brand-navy">Housing Society Structural Repairs &amp; Audit</h3>
+              <p class="text-xs text-slate-600 leading-relaxed">
+                Complete structural audit, RCC column jacketing, external polymer crack-filling plaster, weather-shield painting, and terrace waterproofing with leakage-free warranty[cite: 8, 12].
+              </p>
+            </div>
+          </div>
+          <div class="px-6 pb-6 pt-2 border-t border-slate-200/80 flex items-center justify-between text-xs font-mono text-slate-500">
+            <span>Society Repairs</span>
+            <span class="text-brand-cyan font-bold">Zero Leakage</span>
+          </div>
+        </div>
+
+        <!-- =================================================================
+             CATEGORY 3: PRIVATE SECTOR & COMMERCIAL — 3 PROJECTS
+             ================================================================= -->
+
+        <!-- 3.1 Khatija Apartment G+6 Bandra -->
         <div class="project-card rounded-2xl bg-slate-50 border border-slate-200 overflow-hidden hover:border-brand-cyan transition-all flex flex-col justify-between shadow-sm" data-category="private">
           <div>
             <div class="relative h-60 overflow-hidden">
@@ -724,14 +823,14 @@
                 Private Sector
               </div>
               <div class="absolute top-3 right-3 px-2.5 py-1 bg-white/90 text-emerald-700 font-mono text-[10px] font-bold rounded-lg border border-emerald-300">
-                ₹2.60 Cr Completed
+                ₹2.60 Cr Handover
               </div>
             </div>
             <div class="p-6 space-y-2.5">
               <span class="text-xs font-mono text-cyan-700">Bandra, Mumbai</span>
-              <h3 class="text-lg font-bold text-brand-navy">New Construction RCC Building (G+6)</h3>
+              <h3 class="text-lg font-bold text-brand-navy">New Construction RCC Residential Building (G+6)</h3>
               <p class="text-xs text-slate-600 leading-relaxed">
-                Foundation-to-top execution with vitrified flooring, electrical networks, mesh-reinforced chemical terrace waterproofing with 72-hour test, and IPS slope grading.
+                Deep RCC footings, complete framing, vitrified flooring, electrical networks, mesh-reinforced chemical terrace waterproofing with 72-hour test, and IPS slope grading[cite: 11].
               </p>
             </div>
           </div>
@@ -741,7 +840,7 @@
           </div>
         </div>
 
-        <!-- 5. Commercial Complex Khira Nagar (Gold's Gym) -->
+        <!-- 3.2 Commercial Complex Khira Nagar (Gold's Gym) -->
         <div class="project-card rounded-2xl bg-slate-50 border border-slate-200 overflow-hidden hover:border-brand-cyan transition-all flex flex-col justify-between shadow-sm" data-category="private">
           <div>
             <div class="relative h-60 overflow-hidden">
@@ -757,7 +856,7 @@
               <span class="text-xs font-mono text-cyan-700">Khira Nagar, Santacruz (W), Mumbai</span>
               <h3 class="text-lg font-bold text-brand-navy">Commercial Complex &amp; Waterproofing</h3>
               <p class="text-xs text-slate-600 leading-relaxed">
-                Turnkey commercial execution: anti-termite plinth beam foundation, facade glazing, vitrified flooring, 6,800 sq.ft terrace screed, and 28,000 sq.ft external wall PU sealant.
+                Turnkey commercial execution: anti-termite plinth beam foundation, facade glazing, vitrified flooring, ~6,800 sq.ft terrace screed, and ~28,000 sq.ft external wall PU sealant[cite: 10].
               </p>
             </div>
           </div>
@@ -767,29 +866,29 @@
           </div>
         </div>
 
-        <!-- 6. MES Type II Powai -->
-        <div class="project-card rounded-2xl bg-slate-50 border border-slate-200 overflow-hidden hover:border-brand-cyan transition-all flex flex-col justify-between shadow-sm" data-category="railways-defense">
+        <!-- 3.3 Corporate Office & Commercial Fit-Out -->
+        <div class="project-card rounded-2xl bg-slate-50 border border-slate-200 overflow-hidden hover:border-brand-cyan transition-all flex flex-col justify-between shadow-sm" data-category="private">
           <div>
             <div class="relative h-60 overflow-hidden">
-              <img src="assets/images/MES TYPE II QUARTER BHANDP.png" alt="MES Type II Quarters" class="w-full h-full object-cover">
+              <img src="assets/images/bkc_fitout.jpg" alt="Corporate Office Turnkey Interiors" class="w-full h-full object-cover">
               <div class="absolute top-3 left-3 px-3 py-1 bg-brand-navy text-white text-[10px] font-bold uppercase rounded-lg">
-                Defense Infrastructure
+                Interiors &amp; Sheds
               </div>
               <div class="absolute top-3 right-3 px-2.5 py-1 bg-white/90 text-emerald-700 font-mono text-[10px] font-bold rounded-lg border border-emerald-300">
-                MES Compliant
+                Turnkey Handover
               </div>
             </div>
             <div class="p-6 space-y-2.5">
-              <span class="text-xs font-mono text-cyan-700">Powai / Bhandup, Mumbai</span>
-              <h3 class="text-lg font-bold text-brand-navy">Defense Residential Quarters Type II</h3>
+              <span class="text-xs font-mono text-cyan-700">Corporate &amp; Industrial Sector, Mumbai</span>
+              <h3 class="text-lg font-bold text-brand-navy">Commercial Fit-Out &amp; Industrial Shed Flooring</h3>
               <p class="text-xs text-slate-600 leading-relaxed">
-                Multi-storey defense accommodation with structural crack filling, high-performance elastomeric waterproofing membranes, and rigid quality tests.
+                End-to-end turnkey interior execution (civil alterations, glass partitions, ceiling, electrical, and painting) plus heavy-duty industrial floor screeding and basement waterproofing[cite: 7, 12].
               </p>
             </div>
           </div>
           <div class="px-6 pb-6 pt-2 border-t border-slate-200/80 flex items-center justify-between text-xs font-mono text-slate-500">
-            <span>MES Specifications</span>
-            <span class="text-brand-cyan font-bold">Lock &amp; Key</span>
+            <span>Turnkey Fit-Out</span>
+            <span class="text-brand-cyan font-bold">Direct Oversight</span>
           </div>
         </div>
 
@@ -1036,7 +1135,7 @@
         <!-- Logo and info -->
         <div class="space-y-3 md:col-span-2">
           <div class="flex items-center gap-2.5">
-            <div class="bg-white/10 p-2 rounded-xl backdrop-blur-sm border border-white/10 inline-block">
+            <div class="bg-white/40 p-2 rounded-xl backdrop-blur-sm border border-white/10 inline-block">
               <img 
                 src="/assets/images/BuildIQ  logo PNG blue.png" 
                 alt="BuildIQ Projects" 
